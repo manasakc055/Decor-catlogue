@@ -19,9 +19,33 @@
 
             font-family: plantina;
         }
-        .top-nav{
-            height: 20px;
+      
+        /************nav-bar**************/
+        .navbar {
+            padding: 10px 20px;
         }
+        .navbar .nav-item {
+            margin: 0 10px;
+        }
+        .navbar img {
+            max-width: 80%;
+            height: auto;
+        }
+        .btn-call-us {
+            outline: 1.5px solid #000000;
+            padding: 5px 10px;
+            background-color: #ffffff;
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-call-us:hover {
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+
+        }
+        /*section*/
        section{
         margin: 30px 0;
        }
@@ -30,6 +54,7 @@
          color: grey;
 
        }
+       /*button*/
         button{
         outline: 2px solid #000000;
         border: 0;
@@ -44,35 +69,44 @@
         outline-offset: 5px;
         background-color: #fff
         }
-        .arrivals-section{
-            padding-top: 30px;
+        /*****************section-2************/
+        .slider-controls {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            pointer-events: auto;
+            margin-top: 25px;
         }
 
+         .arrivals-section .prev, .next {
+            cursor: pointer;
+            font-size: 18px; /* Adjust arrow size */
+            pointer-events: auto;
+            color: #000; /* Adjust arrow color */
+        }
 
-        .card {
+        .arrivals-section .card {
             border: none;
             transition: transform 0.3s ease-in-out;
         }
 
-        .card:hover {
+        .arrivals-section .card:hover {
             transform: scale(1.005);
         }
-        .card-img-top{
+
+        .arrivals-section .card-img-top {
             width: 100%;
-            height:auto;
+            height: auto;
         }
 
-
         .slider-container {
-            /* background-color: #3d3d3d; */
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            max-width: 55%;
+            max-width: 100%;
             overflow: hidden;
             padding: 10px;
-            /* border-bottom: #555 2px solid; */
         }
 
         .slider {
@@ -85,39 +119,9 @@
             display: none; /* Hide scrollbar */
         }
 
-        .card {
-            width: 250px;
-            margin-right: 15px;
-            background-color: #fff;
-            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 15px;
-        }
-
-        .card-title {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .slider-controls {
-            display: flex;
-            gap:5px;
-            width: 100%;
-            display: flex;
-            transform: translateY(-50%);
-            pointer-events: none;
-            margin-top: 25px;
-
+        .arrivals-section .card {
+            min-width: 250px;
+            margin-right: 16px;
         } 
         a { 
             text-decoration: underline;
@@ -127,7 +131,22 @@
             margin-bottom: 20px;
             
         }
-        
+        /***********section-3*************/
+        .section-3 {
+            min-height: 100vh;
+        }
+
+        .section-3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-3 .col {
+            height: 50vh;
+        }
+
+        /***********section-4*************/
         .carousel-item {
             height: 100vh;
             min-height: 400px;
@@ -153,8 +172,8 @@
             position: absolute;
             bottom: 15%;
             left: 50px;
-            z-index: 2; /* Above the dark overlay */
-            color: #ffffff; /* Pure white */
+            z-index: 2;
+            color: #ffffff; 
             font-family: 'Georgia', serif;
         }
 
@@ -169,27 +188,25 @@
 
         /* Centered and Rounded control buttons with black color */
         .carousel-control-prev, .carousel-control-next {
-            background-color: black; /* Black background */
+            background-color: black; 
             width: 50px;
             height: 50px;
-            border-radius: 50%; /* Round buttons */
+            border-radius: 50%; 
             display: flex;
             justify-content: center;
             align-items: center;
-            top: 50%; /* Position it in the middle of the image */
-            transform: translateY(-50%); /* Adjust for vertical centering */
+            top: 50%; 
+            transform: translateY(-50%); 
         }
 
         .carousel-control-prev {
-            left: 10px; /* Move button slightly to the left of the image */
+            left: 10px; 
         }
 
         .carousel-control-next {
-            right: 10px; /* Move button slightly to the right of the image */
+            right: 10px; 
         }
-
-     
-
+        
         /* Header text styling */
         .header-text {
             position: absolute;
@@ -200,14 +217,102 @@
             font-size: 1.2rem;
             font-family: 'Arial', sans-serif;
         }
-
+        
         .header-text a {
             color: white;
             text-decoration: none;
         }
+        /**********Section-5*********/
+        .sec-5 .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .sec-5 .card:hover {
+            transform: translateY(-5px);
+        }
+        .sec-5 .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        /***************footer************/
+        .footer .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer .text {
+            font-size: 16px;
+        }
 
+        .footer p {
+            margin: 0;
+            color: #6c757d;
+        }
+        .footer button:hover{
+            background-color: #000000;
+            color: #ffffff;
+
+        }
+
+      
+
+        /* Media Queries for--- Nav-bar--- Responsive Design */
+        @media (max-width: 575.98px) { /* Extra small devices (phones) */
+            .navbar {
+                text-align: center;
+                padding: 10px;
+            }
+            .navbar .nav-item {
+                margin: 5px 0;
+            }
+            .navbar .btn-call-us {
+                display: block;
+                margin: 10px auto;
+            }
+         
+        }
+        @media (min-width: 576px) and (max-width: 767.98px) { /* Small devices (phones) */
+            .navbar {
+                text-align: center;
+                padding: 15px;
+            }
+            .navbar .nav-item {
+                margin: 5px 0;
+            }
+            .navbar img {
+                width: 150px; /* Adjust size for small devices */
+            }
+            .footer .row {
+                text-align: center;
+            }
+            .footer .text {
+                font-size: 14px;
+            }
+            .footer button {
+                width: 100%;
+            }
+             
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices (tablets) */
+            .navbar {
+                padding: 20px;
+            }
+            .navbar .nav-item {
+                margin: 0 15px;
+            }
+        }
+        @media (min-width: 992px) { /* Large devices (desktops) */
+            .navbar {
+                padding: 20px 40px;
+            }
+        
+        }
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
+          
+            .section-3 .col {
+                height: 100vh;
+            }
             .overlay-text h1 {
                 font-size: 2rem;
             }
@@ -223,6 +328,13 @@
             .about-sec2-content{
                 text-align: center;
             }
+            .footer .row {
+                text-align: left;
+            }
+            .footer .col {
+                margin-bottom: 0;
+            }
+      
         }
 
         @media (max-width: 576px) {
@@ -245,28 +357,53 @@
                 font-size: 0.9rem;
                 right: 10px;
             }
+            .sec-5 .container{
+                padding-left: 20%;
+            }
+            /*arrival-section*/
+            .arrivals-section .slider-container {
+                padding: 5px;
+            }
+
+            .arrivals-section .card {
+                min-width: 180px;
+                margin-right: 8px;
+            }
+
+            .arrivals-section .text-heading {
+                font-size: 24px;
+            }
+
+            .arrivals-section .text-description {
+                font-size: 12px;
+            }
+            
+           
         }
     </style> 
 </head>
 <body>
-    <!-- Just an image -->
-  <nav class="top-nav navbar navbar-dark bg-dark justify-content-center" style="height: 37px;">
-        <p class="text-white">Make room for better living</p>
-  </nav>
-  <!-- Image and text -->
-<nav class="navbar navbar-light  d-flex justify-content-between">
-    <div>
-        <i class="fa-brands fa-instagram  fs-5 ps-3"></i>        
-        <i class="fa-brands fa-facebook fs-5 ps-3"></i>
-        <i class="fa-brands fa-twitter fs-5 ps-3"></i>      
+    <!-- top nav -->
+    <nav class="top-nav navbar navbar-dark bg-dark d-flex justify-content-center align-items-center py-1" style="height: 37px;">
+        <p class="text-white text-center mb-0">Make room for better living</p>
+    </nav>
+    
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-light d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+        <i class="fa-brands fa-instagram fs-5"></i>
+        <i class="fa-brands fa-facebook fs-5 ps-2"></i>
+        <i class="fa-brands fa-twitter fs-5 ps-2"></i>
     </div>
-    <div class="justify-content-center ">
-      <img src="assets/logo.svg" width="181" height="65" class="d-inline-block align-top" alt="">
-     
+    <div class="d-flex justify-content-center">
+        <img src="assets/logo.svg" width="181" height="65" class="d-inline-block align-top" alt="Logo">
     </div>
-    <button><span>Contact Us</span> </button>
+    <div class="d-flex align-items-center">
+        <a href="tel:+1234567890" class="btn-call-us">Call Us</a>
+    </div>
 </nav>
-<section class=" about-sec2 mt-5"  style=" margin: 6% 0;">
+<!--Section-1-->
+<section class=" about-sec2 mt-4">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class=" col-lg-6 gap-5">
@@ -286,99 +423,114 @@
 </section>
 
 <!--section-2-->
-<section class=" arrivals-section mx-5 my-5 mt-5 " style=" margin: 6% 0;"> 
-        <div class="row d-flex align-items-center justify-content-around">
-            <div class="col-lg-4 text-content" >
-                <h1 class="text-heading fw-bold" >New Arrivals<br></h1>
-                <p class="text-description" style="font-size: 13px; color: grey;">We’ve designed and curated pieces that are a cut above your average home goods, because when you level up your everyday objects, you elevate your daily rituals.</p>
-                <a href="#" class=" text-dark text-decoration-underline">Learn More</a>
-               
-            </div> 
-            <div class="col-lg-8 mt-3 ">
-                <div class="slider">
-                    <div class="card">
-                        <img src="assets/pic2.png" alt="Card Image 1">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h3 class="card-title">Card 1</h3>
-                                <p class="card-symbol">-></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/pic3.png" alt="Card Image 2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h3 class="card-title">Card 1</h3>
-                                <p class="card-symbol">-></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/pic4.png" alt="Card Image 3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h3 class="card-title">Card 1</h3>
-                                <p class="card-symbol">-></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/pic3.png" alt="Card Image 4">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h3 class="card-title">Card 1</h3>
-                                <p class="card-symbol">-></p>  
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <hr/>
-                   <!-- Slider controls -->
-                <div class="slider-controls">
-                    <div class="prev">❮</div>
-                    <div class="next">❯</div>
-                </div>
-            </div>
+<section class="arrivals-section mx-4" style="padding: 2rem 0;">
+    <div class="row d-flex align-items-center justify-content-around mb-5">
+        <!-- Text Section -->
+        <div class="col-12 col-md-4 text-content mb-4 mb-lg-0">
+            <h1 class="text-heading fw-bold">New Arrivals</h1>
+            <p class="text-description" >
+                We’ve designed and curated pieces that are a cut above your average home goods, because when you level up your everyday objects, you elevate your daily rituals.
+            </p>
+            <a href="#" class="text-dark text-decoration-underline">Learn More</a>
         </div>
-</section>
-<!--section-3-->
-<div class="container mb-5">
-    <div class="text-content">
-        <div class="row">
-            <div class="col-4">
-                <h2 class=" text-heading text-dark py-2">Design for you</h2>
 
+        <!-- Slider Section -->
+        <div class="col-12 col-lg-8 mt-3">
+            <div class="slider-container">
+                <div class="slider d-flex flex-nowrap overflow-hidden">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="assets/pic2.png" class="img-fluid card-img-top" alt="Card Image 1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">          
+                                <h6 class="card-title">Railing</h6>
+                                <p class="card-symbol">-></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="assets/pic3.png" class="img-fluid card-img-top" alt="Card Image 2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">          
+                                <h6 class="card-title">Doors</h6>
+                                <p class="card-symbol">-></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="assets/pic4.png" class="img-fluid card-img-top" alt="Card Image 3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">          
+                                <h6 class="card-title">Window Shutters</h6>
+                                <p class="card-symbol">-></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <img src="assets/pic3.png" class="img-fluid card-img-top" alt="Card Image 4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">          
+                                <h6 class="card-title">Card 1</h6>
+                                <p class="card-symbol">-></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-8">
-                <p class="text-content mb-4 mt-1 ">We’ve designed and curated pieces that are a cut above your average home goods, because when you level up your everyday objects, you elevate your daily rituals. Let the magic happen.</p>
+
+            <!-- Slider controls -->
+            <hr/>
+            <div class="slider-controls d-flex justify-content-between">
+                <div class="prev">❮</div>
+                <div class="next">❯</div>
             </div>
         </div>
     </div>
-    <div class="row mb-3 ">
-      <div class="col">
-        <img src="assets/pic3.png" style="width:100%;height: 100%;">
+</section>
+
+<!--section-3-->
+<div class=" section-3 container section-3 m4-5"> <!-- Added 'mt-5' for top margin -->
+    <!-- Text Content -->
+    <div class="text-content mb-4">
+        <div class="row">
+            <div class="col-12 col-md-4 ">
+                <h1 class="text-heading fw-bold ">Design for you</h1>
+            </div>
+            <div class="col-12 col-md-8">
+                <p class="text-description mb-4 mt-1">
+                    We’ve designed and curated pieces that are a cut above your average home goods, because when you level up your everyday objects, you elevate your daily rituals. Let the magic happen.
+                </p>
+            </div>
+        </div>
     </div>
-      <div class="col-lg-7">
-        <img src="assets/pic9.png" style="width:100%;height: 100%;">
-    </div>
+
+    <!-- Image Grid Rows -->
+    <div class="row mb-3">
+        <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+            <img src="assets/pic7.jpg" alt="Image 1">
+        </div>
+        <div class="col-12 col-lg-7 pt-4 pt-lg-0">
+            <img src="assets/pic9.png" alt="Image 2">
+        </div>
     </div>
     <div class="row mb-5">
-      <div class="col">
-        <img src="assets/pic8.png" style="width:100%;height: 100%;">
-    </div>
-      <div class="col">
-        <img src="assets/pic2.png" style="width:100%;height: auto;">
-    </div>
-   
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <img src="assets/pic8.png" alt="Image 3">
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="assets/pic6.png" alt="Image 4">
+        </div>
     </div>
 </div>
-
 <!--section4-->
-<section style=" padding: 3%; margin: 10% 0; background-color: #000000;" >
-    <div style="margin: 3%;">
+<section style=" padding: 5rem 3rem; background-color: black;" >
+    <div class="section-4">
         <!-- Carousel -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -395,11 +547,11 @@
                     </div>
                 </div>
                 <!-- Second Slide -->
-                <div class="carousel-item" style="background-image: url('chinese-city.jpg');">
+                <div class="carousel-item" style="background-image: url('assets/pic1.png');">
                     <div class="overlay-text">
                         <h6>PROJECT</h6>
                         <h1>Mono Redesign</h1>
-                        <p>(4)</p>
+                        <p>(5)</p>
                     </div>
                     <div class="header-text">
                         <p>We design your <a href="#">home</a>.</p>
@@ -424,98 +576,100 @@
 
 
 <!--section-5-->
-<section class="about-sec4 ">
-    <div class="container mt-5">
-            <div class="text-content row ">
-                <div class="col">
-                    <p class=" text-dark ">#design</p>
-    
-                </div>
-                <div class="col text-end">
-                    <p><i class="fa-brands fa-instagram"></i>        
-                        follow on instagram
-                    </p>
-                </div>
-           </div>
-        <!-- <hr class=" rounded-3 " style="width: 120px; height:5px; background-color: #00ff73;"> -->
-        <div class="row">
-            <div class="sec4-card col-lg-3 info-box py-2 ">
-                    <div class="card" style="width: 100%; height:auto;">
-                        <img src="assets/a1.png" class="card-img-top" style="width: 100%; height:100%;"alt="...">
-                    </div>
-            </div>
-            <div class="sec4-card col-lg-3 info-box py-2 ">
-                    <div class="card" >
-                        <img src="assets/a2.png" class="card-img-top" style="width: 100%; height:100%;"alt="...">
-                    </div>
-            </div>
-            <div class="sec4-card col-lg-3 info-box py-2 ">
-                    <div class="card" style="width: 100%; height:100%;">
-                        <img src="assets/a3.png" class="card-img-top" style="width: 100%; height:100%;"alt="...">
-                    </div>
-            </div>
-            <div class="sec4-card col-lg-3 info-box py-2 ">
-                    <div class="card" style="width: 100%; height:100%;">
-                        <img src="assets/a4.png" class="card-img-top" style="width: 100%; height:100%;"alt="...">
-                    </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--footer-->
-<div class="footer container p-5">
-    <div class="row">
+<div class=" sec-5 container  py-5">
+    <div class="text-content row ">
         <div class="col">
-            <div class="row  d-flex mb-3 ">
-                <div class=" col logo p-0">
-                    <img src="assets/logo.svg" width="140" height="65" class="align-top" alt="">
-                </div>
-                <div class=" col social-media-icons  d-flex align-items-center">
-                
-                 
-                        <i class="fa-brands fa-instagram  fs-5 ps-3"></i>        
-                        <i class="fa-brands fa-facebook fs-5 ps-3"></i>
-                        <i class="fa-brands fa-twitter fs-5 ps-3"></i>        
-                </div>
-            </div>
-            <div class="row  d-flex text-center">
-                @Decorsin - 2024 - All Rights Reserved
+            <p class=" text-dark ">#design</p>
+
+        </div>
+        <div class="col text-end">
+            <p><i class="fa-brands fa-instagram"></i>        
+                follow on instagram
+            </p>
+        </div>
+   </div>
+    <!-- <hr class=" rounded-3 " style="width: 120px; height:5px; background-color: #00ff73;"> -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Card 1 -->
+        <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+                <img src="assets/a1.png" class="card-img-top h-100" alt="Card Image 1">
             </div>
         </div>
-        <div class="col d-flex align-items-end  justify-content-end">
-            <div class="text align-items-center me-2">
+
+        <!-- Card 2 -->
+        <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+                <img src="assets/a2.png" class="card-img-top h-100" alt="Card Image 2">
+            </div>
+        </div>
+     
+        <!-- Card 3 -->
+        <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+                <img src="assets/a3.png" class="card-img-top h-100" alt="Card Image 3">
+            </div>
+        </div>
+     
+        <!-- Card 4 -->
+        <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+                <img src="assets/a4.png" class="card-img-top h-100" alt="Card Image 4">
+            </div>
+        </div>
+     
+ 
+   
+    </div>
+</div>
+<!--footer-->
+<div class="footer container py-5">
+    <div class="row d-flex align-items-center text-center text-md-start">
+        <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+            <div class="row d-flex mb-3">
+                <div class="col logo">
+                    <img src="assets/logo.svg" width="140" height="65" class="align-top" alt="Logo">
+                </div>
+            </div>
+            <div class="row">
+                <p>@Decorsin - 2024 - All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
+            <div class="text text-center text-md-end pt-5">
                 <p>Ready to get started?</p>
             </div>
-            <button><span>Let's Talk</span> </button>
+            <button class="mt-2"><span>Let's Talk</span></button>
         </div>
     </div>
-
-
 </div>
 
-
-
-    <script>
+<!--Js script for caurosal-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
         const slider = document.querySelector('.slider');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        const scrollAmount = 300; // Scroll by 300px at a time
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
 
-        prevBtn.addEventListener('click', () => {
+        // Scroll by one card width (can be adjusted as needed)
+        const cardWidth = slider.querySelector('.card').offsetWidth + 16; // Including margin-right
+
+        // Previous button click event
+        prev.addEventListener('click', function() {
             slider.scrollBy({
-                top: 0,
-                left: -scrollAmount,
-                behavior: 'smooth'
+                left: -cardWidth, // Scroll left by one card width
+                behavior: 'smooth' // Smooth scroll behavior
             });
         });
 
-        nextBtn.addEventListener('click', () => {
+        // Next button click event
+        next.addEventListener('click', function() {
             slider.scrollBy({
-                top: 0,
-                left: scrollAmount,
-                behavior: 'smooth'
+                left: cardWidth, // Scroll right by one card width
+                behavior: 'smooth' // Smooth scroll behavior
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html> 
