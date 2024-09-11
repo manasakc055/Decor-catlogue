@@ -19,23 +19,50 @@
 
             font-family: plantina;
         }
-        .feature-icon {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
         .feature-box {
-            text-align: center;
             padding: 20px;
-        }
-        .section-title {
+            border-radius: 10px;
             text-align: center;
-            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #3f3f3f;
+            color: #ffffff;
         }
-        .section-subtitle {
-            text-align: center;
-            margin-bottom: 40px;
+
+        .image-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 150px;  /* Fixed width */
+            height: 150px; /* Fixed height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-      
+        .feature-box:hover{
+            color: #000000;
+            background-color: #fff;
+            
+        }
+
+        .image-card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .feature-box h6 {
+            font-size: 16px;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+        }
+    
         /************nav-bar**************/
         .navbar {
             padding: 10px 20px;
@@ -437,57 +464,82 @@
         </div>
     </div>
 </section>
-    <!-- App Feature Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <!-- Title Section -->
-            <div class="section-title">
-                <h1 class="fw-bold">Services</h1>
-                <p class="section-subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most relevant channels such as Facebook.</p>
-            </div>
-            <!-- Features -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 feature-box">
-                    <img src="assets/d1.png" class="img-fluid  mb-3" alt="App Development Icon" style="height: 25% ; width: 15%;">
+<!-- App Feature Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <!-- Title Section -->
+        <div class="section-title text-center">
+            <h1 class="fw-bold">Services</h1>
+            <p class="section-subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most relevant channels such as Facebook.</p>
+        </div>
+        <!-- Features -->
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box shadow-lg ">
+                    <!-- Image Card -->
+                    <div class="image-card">
+                        <img src="assets/d1.png" alt="App Development Icon">
+                    </div>
                     <h6 class="fw-bold">Upvc Windows</h6>
-                    <p>Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 feature-box">
-                    <img src="assets/r1.png" class="img-fluid mb-3" alt="10 Times Award Icon" style="height: 25% ; width: 15%;">
-                    <h6 class="fw-bold">Pvc panal&Rafters</h6>
-                    <p>Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 feature-box">
-                    <img src="assets/r2.png" class="img-fluid  mb-3" alt="Cloud Storage Icon" style="height: 25% ; width: 10%;">
-                    <h6 class="fw-bold">
-                        All kind of Doors
-                    </h6>
-                    <p>Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
+                    <p class="">Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
                 </div>
             </div>
-            <!-- Features -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 feature-box">
-                    <img src="assets/r3.png" class="img-fluid  mb-3" alt="App Development Icon" style="height: 25% ; width: 15%;">
-                    <h6 class="fw-bold">Steel railing</h6>
-                    <p>Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 feature-box">
-                    <img src="assets/r1.png" class="img-fluid mb-3" alt="10 Times Award Icon" style="height: 25% ; width: 15%;">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box shadow-lg ">
+                    <!-- Image Card -->
+                    <div class="image-card">
+                        <img src="assets/s21.png" alt="10 Times Award Icon">
+                    </div>
                     <h6 class="fw-bold">Pvc panal&Rafters</h6>
-                    <p>Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
+                    <p class="">Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 feature-box">
-                    <img src="assets/r2.png" class="img-fluid  mb-3" alt="Cloud Storage Icon" style="height: 25% ; width: 10%;">
-                    <h6 class="fw-bold">
-                        All kind of Doors
-                    </h6>
-                    <p>Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box shadow-lg ">
+                    <!-- Image Card -->
+                    <div class="image-card">
+                        <img src="assets/s23.png" alt="App Development Icon">
+                    </div>
+                    <h6 class="fw-bold">Upvc Windows</h6>
+                    <p class="">Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
                 </div>
             </div>
         </div>
-    </section>
-
+        <!-- Features -->
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box shadow-lg ">
+                    <!-- Image Card -->
+                    <div class="image-card">
+                        <img src="assets/r3.png" alt="Steel railing Icon">
+                    </div>
+                    <h6 class="fw-bold">Steel railing</h6>
+                    <p class="">Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box shadow-lg ">
+                    <!-- Image Card -->
+                    <div class="image-card">
+                        <img src="assets/r1.png" alt="10 Times Award Icon">
+                    </div>
+                    <h6 class="fw-bold">Pvc panal&Rafters</h6>
+                    <p class="">Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box shadow-lg ">
+                    <!-- Image Card -->
+                    <div class="image-card">
+                        <img src="assets/r3.png" alt="Steel railing Icon">
+                    </div>
+                    <h6 class="fw-bold">Steel railing</h6>
+                    <p class="">Get your blood tests delivered at home. Collect a sample from the news about your blood tests.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--section-2-->
 <section class="arrivals-section mx-4" style="padding: 2rem 0;">
@@ -511,7 +563,7 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-between">          
                                 <h6 class="card-title">Railing</h6>
-                                <p class="card-symbol">-></p>
+                                <p class="card-symbol"></p>
                             </div>
                         </div>
                     </div>
@@ -522,7 +574,7 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-between">          
                                 <h6 class="card-title">Doors</h6>
-                                <p class="card-symbol">-></p>
+                                <p class="card-symbol"></p>
                             </div>
                         </div>
                     </div>
@@ -533,7 +585,7 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-between">          
                                 <h6 class="card-title">Window Shutters</h6>
-                                <p class="card-symbol">-></p>
+                                <p class="card-symbol"></p>
                             </div>
                         </div>
                     </div>
@@ -544,7 +596,7 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-between">          
                                 <h6 class="card-title">Card 1</h6>
-                                <p class="card-symbol">-></p>
+                                <p class="card-symbol"></p>
                             </div>
                         </div>
                     </div>
