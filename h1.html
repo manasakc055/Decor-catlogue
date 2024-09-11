@@ -1,101 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-
-    <style>
-        body {
-            font-family: plantina;
-        }
-
-        /************footer**************/
-        .footer .logo img {
-            max-width: 100%;
-            height: auto;
-        }
-        .footer .text {
-            font-size: 16px;
-        }
-        .footer p {
-            margin: 0;
-            color: #6c757d;
-        }
-        .footer button:hover {
-            background-color: #000000;
-            color: #ffffff;
-        }
-
-        /* Footer Social Icons */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: #000000;
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .social-icons {
-                gap: 10px;
-            }
-            .social-icons a {
-                font-size: 1.25rem;
-            }
-        }
-        @media (max-width: 576px) {
-            .social-icons {
-                gap: 8px;
-            }
-            .social-icons a {
-                font-size: 1rem;
-            }
-        }
-
-        /* Footer on smaller devices */
-        @media (max-width: 576px) {
-            .footer .col {
-                text-align: center;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!--Footer-->
-    <div class="footer container py-5">
-        <div class="row d-flex align-items-center text-center text-md-start">
-            <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
-                <div class="row d-flex mb-3">
-                    <div class="col logo">
-                        <img src="assets/logo.svg" width="140" height="65" class="align-top" alt="Logo">
-                    </div>
-                </div>
-                <div class="row">
-                    <p>@Decorsin - 2024 - All Rights Reserved</p>
+<!-- Footer -->
+<div class="footer container py-5">
+    <div class="row d-flex align-items-center text-center text-md-start">
+        <!-- Left side: Logo and text -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+            <div class="row d-flex mb-3">
+                <div class="col logo">
+                    <img src="assets/logo.svg" width="140" height="65" class="align-top" alt="Logo">
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-                <div class="text text-center text-md-end pt-5">
-                    <p>Ready to get started?</p>
-                </div>
-                <button class="mt-2"><span>Let's Talk</span></button>
-                <!-- Social Media Icons -->
-                <div class="social-icons mt-4">
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                </div>
+            <div class="row">
+                <p>@Decorsin - 2024 - All Rights Reserved</p>
+            </div>
+            <!-- Icons added here -->
+            <div class="row d-flex justify-content-center justify-content-md-start">
+                <a href="#" class="me-3"><i class="fa-brands fa-instagram fs-4"></i></a>
+                <a href="#" class="me-3"><i class="fa-brands fa-facebook fs-4"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fs-4"></i></a>
             </div>
         </div>
+
+        <!-- Right side: Call to action text and button -->
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
+            <div class="text text-center text-md-end pt-5">
+                <p>Ready to get started?</p>
+            </div>
+            <button class="mt-2 btn btn-primary"><span>Let's Talk</span></button>
+        </div>
     </div>
-</body>
-</html>
+</div>
