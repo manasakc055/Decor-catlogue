@@ -27,15 +27,13 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #3f3f3f;
-            color: #ffffff;
+            color: #000000;
         }
 
         .image-card {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             width: 150px;  /* Fixed width */
             height: 150px; /* Fixed height */
@@ -44,8 +42,7 @@
             align-items: center;
         }
         .feature-box:hover{
-            color: #000000;
-            background-color: #fff;
+          border: 2px solid #000000;
             
         }
 
@@ -75,7 +72,7 @@
             height: auto;
         }
         .btn-call-us {
-            outline: 1.5px solid #000000;
+            outline: 2px solid #000000;
             padding: 5px 10px;
             background-color: #ffffff;
             color: #000;
@@ -296,9 +293,19 @@
             color: #ffffff;
 
         }
-
-      
-
+          /* Footer Social Icons */
+          .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #000000;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
         /* Media Queries for--- Nav-bar--- Responsive Design */
         @media (max-width: 575.98px) { /* Extra small devices (phones) */
             .navbar {
@@ -377,7 +384,27 @@
             .footer .col {
                 margin-bottom: 0;
             }
-      
+            .social-icons {
+                gap: 10px;
+            }
+            .social-icons a {
+                font-size: 1.25rem;
+            }
+            /* Footer Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #000000;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        } 
+     
+
+    
         }
 
         @media (max-width: 576px) {
@@ -420,7 +447,13 @@
             .arrivals-section .text-description {
                 font-size: 12px;
             }
-            
+            .social-icons {
+                gap: 8px;
+            }
+            .social-icons a {
+                font-size: 1rem;
+            }
+           
            
         }
     </style> 
@@ -431,20 +464,19 @@
         <p class="text-white text-center mb-0">Make room for better living</p>
     </nav>
     
-  <!-- Main Navbar -->
-  <nav class="navbar navbar-light d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center">
-        <i class="fa-brands fa-instagram fs-5"></i>
-        <i class="fa-brands fa-facebook fs-5 ps-2"></i>
-        <i class="fa-brands fa-twitter fs-5 ps-2"></i>
-    </div>
-    <div class="d-flex justify-content-center">
+<!-- Main Navbar -->
+<nav class="navbar navbar-light d-flex justify-content-between align-items-center">
+    <!-- Logo aligned left -->
+    <div class="logo">
         <img src="assets/logo.svg" width="181" height="65" class="d-inline-block align-top" alt="Logo">
     </div>
-    <div class="d-flex align-items-center">
+    
+    <!-- Call button aligned right -->
+    <div class="call-btn">
         <a href="tel:+1234567890" class="btn-call-us">Call Us</a>
     </div>
 </nav>
+
 <!--Section-1-->
 <section class=" about-sec2 mt-4">
     <div class="container">
@@ -465,10 +497,10 @@
     </div>
 </section>
 <!-- App Feature Section -->
-<section class="py-5 bg-light">
+<section class="py-5  bg-light">
     <div class="container">
         <!-- Title Section -->
-        <div class="section-title text-center">
+        <div class="section-title pb-5 text-center">
             <h1 class="fw-bold">Services</h1>
             <p class="section-subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most relevant channels such as Facebook.</p>
         </div>
@@ -741,27 +773,33 @@
    
     </div>
 </div>
-<!--footer-->
-<div class="footer container py-5">
-    <div class="row d-flex align-items-center text-center text-md-start">
-        <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
-            <div class="row d-flex mb-3">
-                <div class="col logo">
-                    <img src="assets/logo.svg" width="140" height="65" class="align-top" alt="Logo">
+    <!--Footer-->
+    <div class="footer container py-5">
+        <div class="row d-flex align-items-center text-center text-md-start">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+                <div class="row d-flex mb-3">
+                    <div class="col logo">
+                        <img src="assets/logo.svg" width="140" height="65" class="align-top" alt="Logo">
+                    </div>
+                </div>
+                <div class="row">
+                    <p>@Decorsin - 2024 - All Rights Reserved</p>
                 </div>
             </div>
-            <div class="row">
-                <p>@Decorsin - 2024 - All Rights Reserved</p>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
+                <div class="text text-center text-md-end pt-5">
+                    <p>Ready to get started?</p>
+                </div>
+                <button class="mt-2"><span>Let's Talk</span></button>
+                <!-- Social Media Icons -->
+                <div class="social-icons mt-4">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-            <div class="text text-center text-md-end pt-5">
-                <p>Ready to get started?</p>
-            </div>
-            <button class="mt-2"><span>Let's Talk</span></button>
         </div>
     </div>
-</div>
 
 <!--Js script for caurosal-->
 <script>
