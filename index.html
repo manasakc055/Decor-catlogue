@@ -187,11 +187,16 @@
 
         /***********section-4*************/
         .carousel-item {
-            height: 100vh;
-            min-height: 400px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            position: relative; /* Make sure this is relative for absolute positioning of overlay text */
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         /* Dark overlay on image */
@@ -206,11 +211,11 @@
             z-index: 1;
         }
 
-        /* Overlay text with pure white color on top of the dark image */
+        /* Overlay text with white color on top of the dark image */
         .overlay-text {
             position: absolute;
             bottom: 15%;
-            left: 50px;
+            left: 5%;
             z-index: 2;
             color: #ffffff; 
             font-family: 'Georgia', serif;
@@ -225,7 +230,24 @@
             font-size: 1.25rem;
         }
 
-        /* Centered and Rounded control buttons with black color */
+        /* Header text on top right */
+        .header-text {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            z-index: 2;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Georgia', serif;
+        }
+
+        .header-text p {
+            margin: 0;
+            font-size: 1rem;
+        }
+      /* Centered and Rounded control buttons with black color */
         .carousel-control-prev, .carousel-control-next {
             background-color: black; 
             width: 50px;
@@ -238,29 +260,10 @@
             transform: translateY(-50%); 
         }
 
-        .carousel-control-prev {
-            left: 10px; 
-        }
-
-        .carousel-control-next {
-            right: 10px; 
-        }
+      
         
-        /* Header text styling */
-        .header-text {
-            position: absolute;
-            top: 30px;
-            right: 50px;
-            z-index: 2;
-            color: white;
-            font-size: 1.2rem;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        .header-text a {
-            color: white;
-            text-decoration: none;
-        }
+      
+    
         /**********Section-5*********/
         .sec-5 .card {
             border: none;
@@ -307,6 +310,9 @@
         
         /* Media Queries for--- Nav-bar--- Responsive Design */
         @media (max-width: 575.98px) { /* Extra small devices (phones) */
+            .about-sec2 .text-content{
+                text-align: center;
+            }
             .navbar {
                 text-align: center;
                 padding: 10px;
@@ -318,9 +324,13 @@
                 display: block;
                 margin: 10px auto;
             }
+
          
         }
         @media (min-width: 576px) and (max-width: 767.98px) { /* Small devices (phones) */
+            .about-sec2 .text-content{
+                text-align: center;
+            }
             .navbar {
                 text-align: center;
                 padding: 15px;
@@ -343,6 +353,7 @@
              
         }
         @media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices (tablets) */
+            
             .navbar {
                 padding: 20px;
             }
@@ -362,18 +373,7 @@
             .section-3 .col {
                 height: 100vh;
             }
-            .overlay-text h1 {
-                font-size: 2rem;
-            }
-
-            .overlay-text p {
-                font-size: 1rem;
-            }
-
-            .header-text {
-                font-size: 1rem;
-                right: 20px;
-            }
+            
             .about-sec2-content{
                 text-align: center;
             }
@@ -410,22 +410,7 @@
             .about-sec2-content{
                 text-align: center;
             }
-            .overlay-text {
-                left: 20px;
-            }
-
-            .overlay-text h1 {
-                font-size: 1.75rem;
-            }
-
-            .overlay-text p {
-                font-size: 0.9rem;
-            }
-
-            .header-text {
-                font-size: 0.9rem;
-                right: 10px;
-            }
+         
             .sec-5 .container{
                 padding-left: 20%;
             }
@@ -464,7 +449,7 @@
     </nav>
     
 <!-- Main Navbar -->
-<nav class="navbar navbar-light d-flex justify-content-between align-items-center">
+<nav class="navbar navbar-light bg-dark d-flex justify-content-between align-items-center">
     <!-- Logo aligned left -->
     <div class="logo">
         <img src="assets/logo.svg" width="181" height="65" class="d-inline-block align-top" alt="Logo">
@@ -477,7 +462,7 @@
 </nav>
 
 <!--Section-1-->
-<section class=" about-sec2 mt-4">
+<section class=" about-sec2 ">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class=" col-lg-6 gap-5">
@@ -489,7 +474,7 @@
                     </div> 
                 </div>            
             </div>
-            <div class="col-lg-6 py-5">
+            <div class=" sec1-image col-lg-6 py-3">
                 <img src="assets/pic1.png" style="width:100%;height: auto;">
             </div>
         </div>
@@ -506,7 +491,7 @@
         <!-- Features -->
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-box shadow-lg ">
+                <div class="feature-box shadow p-3 mb-5 bg-body ">
                     <!-- Image Card -->
                     <div class="image-card">
                         <img src="assets/d1.png" alt="App Development Icon">
@@ -516,7 +501,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-box shadow-lg ">
+                <div class="feature-box shadow p-3 mb-5 bg-body ">
                     <!-- Image Card -->
                     <div class="image-card">
                         <img src="assets/s21.png" alt="10 Times Award Icon">
@@ -526,7 +511,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-box shadow-lg ">
+                <div class="feature-box shadow p-3 mb-5 bg-body ">
                     <!-- Image Card -->
                     <div class="image-card">
                         <img src="assets/s23.png" alt="App Development Icon">
@@ -537,9 +522,9 @@
             </div>
         </div>
         <!-- Features -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-box shadow-lg ">
+                <div class="feature-box shadow p-3 mb-5 bg-body ">
                     <!-- Image Card -->
                     <div class="image-card">
                         <img src="assets/r3.png" alt="Steel railing Icon">
@@ -549,7 +534,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-box shadow-lg ">
+                <div class="feature-box shadow p-3 mb-5 bg-body ">
                     <!-- Image Card -->
                     <div class="image-card">
                         <img src="assets/r1.png" alt="10 Times Award Icon">
@@ -559,7 +544,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-box shadow-lg ">
+                <div class="feature-box shadow p-3 mb-5 bg-body ">
                     <!-- Image Card -->
                     <div class="image-card">
                         <img src="assets/r3.png" alt="Steel railing Icon">
@@ -572,77 +557,6 @@
     </div>
 </section>
 
-<!--section-2-->
-<section class="arrivals-section mx-4" style="padding: 2rem 0;">
-    <div class="row d-flex align-items-center justify-content-around mb-5">
-        <!-- Text Section -->
-        <div class="col-12 col-md-4 text-content mb-4 mb-lg-0">
-            <h1 class="text-heading fw-bold">New Arrivals</h1>
-            <p class="text-description" >
-                We’ve designed and curated pieces that are a cut above your average home goods, because when you level up your everyday objects, you elevate your daily rituals.
-            </p>
-            <a href="#" class="text-dark text-decoration-underline">Learn More</a>
-        </div>
-
-        <!-- Slider Section -->
-        <div class="col-12 col-lg-8 mt-3">
-            <div class="slider-container">
-                <div class="slider d-flex flex-nowrap overflow-hidden">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <img src="assets/pic2.png" class="img-fluid card-img-top" alt="Card Image 1">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h6 class="card-title">Railing</h6>
-                                <p class="card-symbol"></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <img src="assets/pic3.png" class="img-fluid card-img-top" alt="Card Image 2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h6 class="card-title">Doors</h6>
-                                <p class="card-symbol"></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <img src="assets/pic4.png" class="img-fluid card-img-top" alt="Card Image 3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h6 class="card-title">Window Shutters</h6>
-                                <p class="card-symbol"></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <img src="assets/pic3.png" class="img-fluid card-img-top" alt="Card Image 4">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">          
-                                <h6 class="card-title">Card 1</h6>
-                                <p class="card-symbol"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slider controls -->
-            <hr/>
-            <div class="slider-controls d-flex justify-content-between">
-                <div class="prev">❮</div>
-                <div class="next">❯</div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!--section-3-->
 <div class=" section-3 container section-3 m4-5"> <!-- Added 'mt-5' for top margin -->
@@ -679,13 +593,11 @@
     </div>
 </div>
 <!--section4-->
-<section style=" padding: 5rem 2rem; background-color: black;" >
+<!-- <section style=" padding: 5rem 2rem; background-color: black;" >
     <div class="section-4">
-        <!-- Carousel -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
     
-                <!-- First Slide -->
                 <div class="carousel-item active" style="background-image: url('p6.jpg');">
                     <div class="overlay-text">
                         <h6>PROJECT</h6>
@@ -696,7 +608,6 @@
                         <p>We design your <a href="#">home</a>.</p>
                     </div>
                 </div>
-                <!-- Second Slide -->
                 <div class="carousel-item" style="background-image: url('assets/pic1.png');">
                     <div class="overlay-text">
                         <h6>PROJECT</h6>
@@ -710,7 +621,6 @@
     
             </div>
     
-            <!-- Carousel controls with Font Awesome icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <i class=" carousel-control-prev-icon" aria-hidden="true"></i>
                 <span class="visually-hidden">Previous</span>
@@ -722,8 +632,57 @@
         </div>
     
     </div>
-</section>
-
+</section> -->
+<div class="" style="background-color: rgb(0, 0, 0);" >
+    <!-- Carousel Section -->
+    <section class="container my-5">
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="p6.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay-text">
+                        <h6>PROJECT</h6>
+                        <h1>Modern Design</h1>
+                        <p>(4)</p>
+                    </div>
+                    <div class="header-text">
+                        <p>We design your <a href="#" class="text-white">home</a>.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="p6.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay-text">
+                        <h6>PROJECT</h6>
+                        <h1>Mono Redesign</h1>
+                        <p>(4)</p>
+                    </div>
+                    <div class="header-text">
+                        <p>We design your <a href="#" class="text-white">home</a>.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="chinese-city.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay-text">
+                        <h6>PROJECT</h6>
+                        <h1>Mono Redesign</h1>
+                        <p>(4)</p>
+                    </div>
+                    <div class="header-text">
+                        <p>We design your <a href="#" class="text-white">home</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+</div>
 
 <!--section-5-->
 <div class=" sec-5 container  py-5">
