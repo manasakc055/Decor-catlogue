@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!--Google fonts-->
-    <!-- Google Fonts: Dancing Script -->
+  <!-- Google Fonts: Dancing Script -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts Raleway -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <link href="/your-path-to-uicons/css/uicons-rounded-solid.css" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
@@ -17,41 +18,50 @@
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
-      h1,h2,h5,.card-title{
-      font-family: 'Lora', serif;
-      font-weight: 700; /* bold */
-
+    h1,
+    h2,
+    h5,
+    .card-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
     }
-    .hero-title h1, .contact-section h2 span,h2 span,p span{
-        font-family: 'Dancing Script', cursive;
+    p,h6{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400; 
     }
-    p{
-      font-family: 'Lora', serif;
-      font-weight: 400; /* normal */
+    .hero-title h1,
+    .contact-section h2 span,
+    h2 span,
+    p span {
+      font-family: 'Dancing Script', cursive;
     }
-    .btn{
+    .btn {
       background-color: #401714;
       color: white;
       border-radius: 0;
-   
+
     }
-    .btn>a{
-        color: white;
-        text-decoration: none;
-    
+    .btn>a {
+      color: white;
+      text-decoration: none;
+
     }
-    .btn:hover{
-        background-color: #401714;
-        color: white;
+
+    .btn:hover {
+      background-color: #401714;
+      color: white;
     }
-    nav .nav-items li,.navbar-nav li a{
-        color: #401714;
+
+    nav .nav-items li,
+    .navbar-nav li a {
+      color: #401714;
     }
+
     /* .navbar{
         border-bottom:1px thin #401714;
 
     } */
- 
+
 
     h1,
     h2,
@@ -60,15 +70,15 @@
     }
 
     /* Inline styles to ensure no external CSS conflicts */
-    .card
-    .btn {
+    .card .btn {
       border-radius: 0;
       text-decoration: none;
       color: white;
       /* Remove border radius */
     }
-    .card{
-        border-radius: 0;
+
+    .card {
+      border-radius: 0;
     }
 
     .card-img-top {
@@ -92,8 +102,9 @@
       background-color: #401714;
       color: white;
     }
+
     .card:hover .icon-img {
-    filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
     }
 
 
@@ -110,115 +121,43 @@
         /* Increase font size for large devices */
       }
     }
-         /***********section-3*************/
-         .section-3 {
-            min-height: 100vh;
-        }
 
-        .section-3 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    /***********section-3*************/
+    .section-3 {
+      min-height: 100vh;
+    }
 
-        .section-3 .col {
-            height: 50vh;
-        }
-        .projects-section .card-img-top{
-          height: 400px; /* Fixed height for all images */
-          object-fit: cover; /* Ensures the image fits the card without distortion */
+    .section-3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        }
-        .social-media-icons i{
-            color: #401714;
-        }
-        .icon-img:hover {
-        filter: brightness(0) invert(1);
-        }
-        /****************************Animation***********/
-/* Define the animation for sliding in from the left */
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+    .section-3 .col {
+      height: 50vh;
+    }
 
-/* Define the animation for sliding in from the right */
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+    .projects-section .card-img-top {
+      height: 400px;
+      /* Fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image fits the card without distortion */
 
-/* Apply the animation to the images when they have the 'animate-on-scroll' class */
-.animate-on-scroll {
-  opacity: 0; /* Initial opacity */
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
+    }
 
-.visible.slide-in-left {
-  animation: slideInLeft 1s ease-out forwards;
-}
+    .social-media-icons i {
+      color: #401714;
+    }
 
-.visible.slide-in-right {
-  animation: slideInRight 1s ease-out forwards;
-}
-/********************* Flip container *******/
-.flip-card {
-  perspective: 1000px; /* Add a 3D perspective */
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s ease-in-out;
-  transform-style: preserve-3d;
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden; /* Hide the backface when flipped */
-}
-
-/* Front of the card */
-.flip-card-front {
-  z-index: 2;
-  background-color: #fff; /* Can customize based on design */
-}
-
-/* Back of the card */
-.flip-card-back {
-  transform: rotateY(180deg); /* Rotate the back side */
-}
-
-/* Flip the card when clicked */
-.flip-card.flipped .flip-card-inner {
-  transform: rotateY(180deg); /* Flips card to show back */
-}
-
-
-
-
-        
+    .icon-img:hover {
+      filter: brightness(0) invert(1);
+    }
   </style>
 </head>
 
 <body>
   <!-- Main Navbar for Large Devices -->
-  <nav class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex mb-5" >
+  <nav class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex mb-5">
     <a class="navbar-brand" href="#">
       <img src="assets/logo.svg" width="160" height="75" alt="Logo">
     </a>
@@ -238,7 +177,7 @@
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
-      <div class="  call-btn d-flex ms-auto" >
+      <div class="  call-btn d-flex ms-auto">
         <a href="tel:+1234567890" class="" style="color: #401714;">Call Now</a>
       </div>
     </div>
@@ -284,8 +223,8 @@
         </h1>
       </div>
       <div class="col-lg-4 text-lg-end text-center mt-3 mt-lg-0">
-        <button   class="btn btn-custom  p-2" >
-            <a href="#projects">Check Our work</a> 
+        <button class="btn btn-custom  p-2">
+          <a href="#projects">Check Our work</a>
         </button>
       </div>
     </div>
@@ -368,45 +307,46 @@
 
   <!---------- Mission Section--------->
   <div class="container mb-5 mt-5">
-      <!-- Header -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <h6 class="text-start fw-bold">Our Mission</h6>
-        </div>
+    <!-- Header -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h6 class="text-start fw-bold">Our Mission</h6>
       </div>
-      <!-- Top Row (Images) -->
-      <div class="row text-center my-3">
-        <div class="col-md-3 col-6">
-          <img src="assets/pic1.png" class="img-fluid animate-on-scroll slide-in-left" alt="Image 1"
-            style="height: 250px; width: 100%; object-fit: cover;">
-        </div>
-        <div class="col-md-3 col-6 offset-md-6">
-          <img src="assets/pic6.png" class="img-fluid animate-on-scroll slide-in-right" alt="Image 2"
-            style="height: 250px; width: 100%; object-fit: cover;">
-        </div>
+    </div>
+    <!-- Top Row (Images) -->
+    <div class="row text-center my-3">
+      <div class="col-md-3 col-6">
+        <img src="assets/pic1.png" class="img-fluid animate-on-scroll slide-in-left" alt="Image 1"
+          style="height: 250px; width: 100%; object-fit: cover;">
       </div>
-      <!-- Mission Text -->
-      <div class="row py-4">
-        <div class="col-12">
-          <p class="fst-italic text-center text-md-center mission-text">
-            <span>A</span> full range of services, from concept development to project implementation. Our team of professional
-            designers has extensive experience working in different styles from classic to modern.
-          </p>
-        </div>
+      <div class="col-md-3 col-6 offset-md-6">
+        <img src="assets/pic6.png" class="img-fluid animate-on-scroll slide-in-right" alt="Image 2"
+          style="height: 250px; width: 100%; object-fit: cover;">
       </div>
-      <!-- Bottom Row (Images) -->
-      <div class="row text-center my-3">
-        <div class="col-md-3 col-6">
-          <img src="assets/pic7.jpg" class="img-fluid animate-on-scroll slide-in-left" alt="Image 3"
-            style="height: 250px; width: 100%; object-fit: cover;">
-        </div>
-        <div class="col-md-3 col-6 offset-md-6">
-          <img src="assets/pic8.png" class="img-fluid animate-on-scroll slide-in-right" alt="Image 4"
-            style="height: 250px; width: 100%; object-fit: cover;">
-        </div>
+    </div>
+    <!-- Mission Text -->
+    <div class="row py-4">
+      <div class="col-12">
+        <p class="fst-italic text-center text-md-center mission-text">
+          <span>A</span> full range of services, from concept development to project implementation. Our team of
+          professional
+          designers has extensive experience working in different styles from classic to modern.
+        </p>
       </div>
+    </div>
+    <!-- Bottom Row (Images) -->
+    <div class="row text-center my-3">
+      <div class="col-md-3 col-6">
+        <img src="assets/pic7.jpg" class="img-fluid animate-on-scroll slide-in-left" alt="Image 3"
+          style="height: 250px; width: 100%; object-fit: cover;">
+      </div>
+      <div class="col-md-3 col-6 offset-md-6">
+        <img src="assets/pic8.png" class="img-fluid animate-on-scroll slide-in-right" alt="Image 4"
+          style="height: 250px; width: 100%; object-fit: cover;">
+      </div>
+    </div>
   </div>
-    
+
   <!------------Services-Section -------->
   <section class="services-section py-5 mt-5 mb-5">
     <div class="container">
@@ -414,7 +354,8 @@
       <div class="row">
         <div class="col-12">
           <h6 class="text-start fw-bold mb-5">Our Services</h6>
-          <h2 class="text-start fw-bold services-title"><span> W</span>e work with both residential <br> <span class="fw-normal">&
+          <h2 class="text-start fw-bold services-title"><span> W</span>e work with both residential <br> <span
+              class="fw-normal">&
               commercial spaces</span></h2>
         </div>
       </div>
@@ -426,7 +367,8 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="  mb-3">
-                <img class="icon-img" src="assets/window-frame.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/window-frame.svg" alt="Image 4"
+                  style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -443,7 +385,8 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/window-frame.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/window-frame.svg" alt="Image 4"
+                  style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -460,7 +403,8 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/steel-railing.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/steel-railing.svg" alt="Image 4"
+                  style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -476,7 +420,7 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/blinds.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/blinds.svg" alt="Image 4" style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -493,7 +437,7 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/building.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/building.svg" alt="Image 4" style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -510,7 +454,7 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/door.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/door.svg" alt="Image 4" style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -527,7 +471,8 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/partitions.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/partitions.svg" alt="Image 4"
+                  style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -544,7 +489,7 @@
             <div class="card-body text-center p-4">
               <!-- Icon (Centered) -->
               <div class="mb-3">
-                <img class="icon-img" src="assets/wallpaper.svg" alt="Image 4"  style="color: aliceblue; height: 50px; ">
+                <img class="icon-img" src="assets/wallpaper.svg" alt="Image 4" style="color: aliceblue; height: 50px; ">
               </div>
               <!-- Title and Text (Centered) -->
               <div>
@@ -558,39 +503,40 @@
     </div>
   </section>
 
-  
+
   <!-------------section-3---------------->
   <div class=" section-3 container section-3 mb-5"> <!-- Added 'mt-5' for top margin -->
     <!-- Text Content -->
     <div class="text-content mb-4">
-        <div class="row">
-            <div class="col-12 col-md-4 ">
-                <h2 class="text-heading text-start fw-bold "><span>D</span>esign for you</h2>
-            </div>
-            <div class="col-12 col-md-8">
-                <p class="text-description mb-4 mt-1">
-                    We’ve designed and curated pieces that are a cut above your average home goods, because when you level up your everyday objects, you elevate your daily rituals. Let the magic happen.
-                </p>
-            </div>
+      <div class="row">
+        <div class="col-12 col-md-4 ">
+          <h2 class="text-heading text-start fw-bold "><span>D</span>esign for you</h2>
         </div>
+        <div class="col-12 col-md-8">
+          <p class="text-description mb-4 mt-1">
+            We’ve designed and curated pieces that are a cut above your average home goods, because when you level up
+            your everyday objects, you elevate your daily rituals. Let the magic happen.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Image Grid Rows -->
     <div class="row mb-3">
-        <div class="col-12 col-lg-5 mb-3 mb-lg-0">
-            <img src="assets/pic7.jpg" alt="Image 1">
-        </div>
-        <div class="col-12 col-lg-7 pt-4 pt-lg-0">
-            <img src="assets/pic9.png" alt="Image 2">
-        </div>
+      <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+        <img src="assets/pic7.jpg" alt="Image 1">
+      </div>
+      <div class="col-12 col-lg-7 pt-4 pt-lg-0">
+        <img src="assets/pic9.png" alt="Image 2">
+      </div>
     </div>
     <div class="row mb-5">
-        <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <img src="assets/pic8.png" alt="Image 3">
-        </div>
-        <div class="col-12 col-md-6">
-            <img src="assets/pic6.png" alt="Image 4">
-        </div>
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <img src="assets/pic8.png" alt="Image 3">
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/pic6.png" alt="Image 4">
+      </div>
     </div>
   </div>
   <!-- ----------Projects-section -------->
@@ -600,12 +546,14 @@
       <div class="row">
         <div class="col-12">
           <h6 class="text-start fw-bold mb-5">Our Projects</h6>
-          <h2 class="text-start fw-bold services-title"><span>T</span>ransforming Residential <span>and</span> Commercial<br> 
+          <h2 class="text-start fw-bold services-title"><span>T</span>ransforming Residential <span>and</span>
+            Commercial<br>
             Spaces with Innovative Design</h2>
         </div>
       </div>
       <!-- Carousel for Large Devices -->
-      <div id="servicesCarousel" class="carousel slide mt-5 d-none d-md-block" data-bs-ride="carousel"  style="margin-bottom:100px;">
+      <div id="servicesCarousel" class="carousel slide mt-5 d-none d-md-block" data-bs-ride="carousel"
+        style="margin-bottom:100px;">
         <div class="carousel-inner">
           <!-- Carousel Item 1 -->
           <div class="carousel-item active">
@@ -752,32 +700,33 @@
       </div>
     </div>
   </section>
- <!-------------Contact Section --------->
-<section class=" contact-section container mt-5 mb-5" style="margin-top: 10rem;">
+  <!-------------Contact Section --------->
+  <section class=" contact-section container mt-5 mb-5" style="margin-top: 10rem;">
     <div class="row">
       <!-- Section Title -->
       <div class="col-md-6">
         <h6 class="text-start fw-bold mb-5">Contact </h6>
         <h2 class="text-start contact-title mt-2 mb-4"><span>G</span>et to know us personally</h2>
         <h5 class="mb-3">Address for an Interior<br> desgin studio</h5>
-        <p><strong>Address:</strong> Sai Baba puntha road, opposite HP Petrol Bunk, Morampudi, Rajamahendravaram, Andhra Pradesh 533107</p>
+        <p><strong>Address:</strong> Sai Baba puntha road, opposite HP Petrol Bunk, Morampudi, Rajamahendravaram, Andhra
+          Pradesh 533107</p>
         <p><strong>Phone:</strong> +91 9014345167</p>
         <p><strong>Email:</strong> info.decorsin@gmail.com</p>
-        
+
         <!-- Social Media Icons -->
         <div class=" social-media-icons mt-4 mb-4">
           <a href="https://facebook.com" class="fs-5" target="_blank">
-            <i class="fa-brands fa-instagram"></i>   
+            <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="https://facebook.com" class="fs-5" target="_blank">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
           <a href="https://x.com" class="fs-5" target="_blank">
-            <i class="fa-brands fa-facebook"></i>          
+            <i class="fa-brands fa-facebook"></i>
           </a>
         </div>
       </div>
-      
+
       <div class="col-md-6">
         <div class="ratio ratio-16x9">
           <iframe
@@ -787,8 +736,8 @@
         </div>
       </div>
     </div>
-</section>
-  
+  </section>
+
   <!------------Footer--------->
   <footer class=" text-center py-4" style="background-color: #401714;">
     <p class="text-white">&copy; 2024 Your Company Name</p>
@@ -796,45 +745,7 @@
 
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const elements = document.querySelectorAll('.animate-on-scroll');
-      
-      // Function to handle the observer actions
-      const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // Add 'visible' class when the element enters the viewport
-            entry.target.classList.add('visible');
-          } else {
-            // Remove 'visible' class when the element exits the viewport
-            entry.target.classList.remove('visible');
-          }
-        });
-      };
-  
-      // Set up Intersection Observer
-      const observer = new IntersectionObserver(observerCallback, {
-        threshold: 0.1, // Trigger when 10% of the element is visible
-      });
-  
-      // Observe all elements with 'animate-on-scroll' class
-      elements.forEach(element => {
-        observer.observe(element);
-      });
-    });
-  </script>
-  <script>
-    document.querySelectorAll('.flip-card').forEach(card => {
-  card.addEventListener('click', function() {
-    card.classList.toggle('flipped'); /* Toggle the flipped class to rotate the card */
-  });
-});
 
-  </script>
-  
-  
-  
 </body>
 
 </html>
