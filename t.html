@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic styling for card and image */
+/* Basic styling for card and image */
+/* Basic styling for card and image */
+.container {
+  width: 300px; /* Adjust as needed */
+  position: relative;
+  margin: 50px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Initial height */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease-in-out; /* Smooth transition for height */
+  overflow: hidden; /* Ensure text stays inside when resizing */
+}
+
+/* Title styling */
+.overlay-title {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  transition: font-size 0.3s ease; /* Optional: Increase font size */
+}
+
+/* Paragraph text initially hidden */
+.overlay-text {
+  color: white;
+  font-size: 14px;
+  opacity: 0; /* Initially hidden */
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth appearance */
+  margin: 5px 0 0; /* Space below the title */
+}
+
+/* On hover, increase the height of the overlay */
+.card:hover .overlay {
+  height: 150px; /* Increase height on hover */
+}
+
+/* Make paragraph text appear on hover */
+.card:hover .overlay-text {
+  opacity: 1; /* Make the text visible */
+  max-height: 50px; /* Set max-height to allow text expansion */
+}
+
+    </style>
+</head>
+<body>
+  <!-- Row 1 -->
+<div class="row row-cols-2 row-cols-md-3 g-4 mt-1">
+    <!-- Box 1 -->
+    <div class="col">
+      <div class="card service-card position-relative d-flex flex-column align-items-center justify-content-center" style="background-image: url('assets/windows.jpg'); background-size: cover; background-position: center;">
+        <div class="card-body text-center p-4">
+        </div>
+        <!-- Overlay -->
+        <div class="overlay">
+          <h6 class="overlay-title fs-4">Upvc Windows</h6>
+          <p class="overlay-text">UPVC windows are durable, energy-efficient, and low-maintenance.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Box 2 -->
+    <div class="col">
+      <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/wallpaper.jpg'); background-size: cover; background-position: center;">
+        <div class="card-body text-center p-4"></div>
+        <div class="overlay">
+          <h6 class="overlay-title fs-4">Wallpaper</h6>
+          <p class="overlay-text">It adds style and texture, transforming spaces with various designs and patterns.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat similar structure for other boxes -->
+  </div>
+  
+    
+</body>
+</html>

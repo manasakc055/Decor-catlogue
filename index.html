@@ -98,10 +98,6 @@
       /* background-color: #d8cdc4; */
     }
 
-    .services-section .card:hover {
-      background-color: #401714;
-      color: white;
-    }
 
     .card:hover .icon-img {
       filter: brightness(0) invert(1);
@@ -151,53 +147,59 @@
       filter: brightness(0) invert(1);
     }
     /****************animation********************/
-    .services-section.card {
-      position: relative;
-      overflow: hidden;
-    }
+   /* Card Styling */
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Initial height */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease-in-out; /* Smooth transition for height */
+  overflow: hidden; /* Ensure text stays inside when resizing */
+}
 
-    .services-section.card-body {
-      transition: transform 0.3s ease;
-    }
+/* Title styling */
+.overlay-title {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  transition: font-size 0.3s ease; /* Optional: Increase font size */
+}
 
-    .card-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(64, 23, 20, 0.7);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
+/* Paragraph text initially hidden */
+.overlay-text {
+  color: white;
+  font-size: 14px;
+  opacity: 0; /* Initially hidden */
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth appearance */
+  margin: 5px 0 0; /* Space below the title */
+}
 
-    .card:hover .card-overlay {
-      opacity: 1;
-    }
+/* On hover, increase the height of the overlay */
+.card:hover .overlay {
+  height: 150px; /* Increase height on hover */
+}
 
-    .card-overlay-text {
-      color: #fff;
-      text-align: center;
-      transform: translateY(20px);
-      opacity: 0;
-      transition: transform 0.4s ease, opacity 0.4s ease;
-    }
-
-    .card:hover .card-overlay-text {
-      transform: translateY(0);
-      opacity: 1;
-    }
+/* Make paragraph text appear on hover */
+.card:hover .overlay-text {
+  opacity: 1; /* Make the text visible */
+  max-height: 50px; /* Set max-height to allow text expansion */
+}
 
   </style>
 </head>
 
 <body>
   <!-- Main Navbar for Large Devices -->
-  <nav class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex mb-5">
+  <nav class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex ">
     <a class="navbar-brand" href="#">
       <img src="assets/logo.svg" width="160" height="75" alt="Logo">
     </a>
@@ -255,7 +257,7 @@
     </div>
   </nav>
   <!---------Hero Section ---------->
-  <header class="container my-5 mt-sm-4 mt-3">
+  <header class="container mb-5 mt-sm-4 mt-1">
     <div class="row align-items-center">
       <div class="col-lg-8  hero-title text-lg-start text-center">
         <h1 class="display-6">
@@ -400,15 +402,16 @@
       </div>
       <!-- Row 1 -->
       <div class="row row-cols-2 row-cols-md-3 g-4 mt-1">
-        <!-- Box 1 -->
-      <div class="col">
-        <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/windows.jpg'); background-size: cover; background-position: center;">
-          <div class="card-body text-center p-4" >
+
+       <!-- Box 1 -->
+       <div class="col">
+        <div class="card service-card position-relative d-flex flex-column align-items-center justify-content-center" style="background-image: url('assets/windows.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body text-center p-4">
           </div>
-          <!-- Title and Text (Centered) -->
-          <div class="card-overlay">
-            <h6 class="card-title fs-4">Upvc Windows</h6>
-            <p class="card-overlay-text">UPVC windows are durable, energy-efficient, and low-maintenance.</p>
+          <!-- Overlay -->
+          <div class="overlay">
+            <h5 class="overlay-title fs-4">Upvc Windows</h6>
+            <p class="overlay-text text-center">UPVC windows are durable, energy-efficient, and low-maintenance.</p>
           </div>
         </div>
       </div>
@@ -418,9 +421,9 @@
           <div class="card-body text-center p-4" >
           </div>
           <!-- Title and Text (Centered) -->
-          <div class="card-overlay">
-            <h6 class="card-title fs-4">Wallpaper</h6>
-            <p class="card-overlay-text">It adds style and texture, transforming spaces with various designs and patterns.</p>
+          <div class="overlay">
+            <h5 class="overlay-title fs-4">Wallpaper</h5>
+            <p class="overlay-text text-center">transforming spaces with various designs and patterns.</p>
           </div>
         </div>
       </div>
@@ -430,9 +433,9 @@
             <div class="card-body text-center p-4">
             </div>
             <!-- Title and Text (Centered) -->
-            <div class="card-overlay">
-              <h6 class="card-title  text-center fs-4">Pvc panal&Rafters</h6>
-              <p class="card-overlay-text">These are lightweight, weather-resistant, and low-maintenance.</p>
+            <div class="overlay">
+              <h5 class="overlay-title fs-4">Pvc panal&Rafters</h5>
+              <p class="overlay-text text-center">These are lightweight, weather-resistant, and low-maintenance.</p>
             </div>
           </div>
         </div>
@@ -442,9 +445,9 @@
             <div class="card-body text-center p-4">
             </div>
             <!-- Title and Text (Centered) -->
-            <div class="card-overlay">
-              <h6 class="card-title text-center fs-4">Quality Steel railing </h6>
-              <p class="card-overlay-text">It offer a perfect blend of strength and durability, adding a stylish touch to any space.</p>
+            <div class="overlay">
+              <h5 class="overlay-title fs-4">Quality Steel railing </h5>
+              <p class="overlay-text text-center">A perfect blend of strength,durability, adding a stylish touch to any space.</p>
             </div>
           </div>
         </div>
@@ -454,9 +457,9 @@
             <div class="card-body text-center p-4">
             </div>
             <!-- Title and Text (Centered) -->
-            <div class="card-overlay">
-              <h6 class="card-title text-center fs-4">Blinds & Mosquito doors</h6>
-              <p class="card-overlay-text">These doors provide privacy and protection from insects.</p>
+            <div class="overlay">
+              <h5 class="overlay-title text-center fs-5">Blinds & Mosquito doors</h5>
+              <p class="overlay-text text-center">These doors provide privacy and protection from insects.</p>
             </div>
           </div>
         </div>
@@ -466,9 +469,9 @@
             <div class="card-body text-center p-4">
             </div>
             <!-- Title and Text (Centered) -->
-            <div class="card-overlay">
-              <h6 class="card-title  text-center fs-4">Elevation Glass</h6>
-              <p class="card-overlay-text">It enhances building aesthetics with sleek, modern design and natural light.</p>
+            <div class="overlay">
+              <h5 class="overlay-title fs-4">Elevation Glass</h5>
+              <p class="overlay-text text-center">Enhances building aesthetics with sleek, modern design and natural light.</p>
             </div>
           </div>
         </div>
@@ -478,9 +481,9 @@
             <div class="card-body text-center p-4">
             </div>
             <!-- Title and Text (Centered) -->
-            <div class="card-overlay">
-              <h6 class="card-title  text-center fs-4">All kinds of Doors</h6>
-              <p class="card-overlay-text">Doors offer diverse styles and functions to suit any need.</p>
+            <div class="overlay">
+              <h5 class="overlay-title fs-4">All kinds of Doors</h5>
+              <p class="overlay-text text-center">Doors offer diverse styles and functions to suit any need.</p>
             </div>
           </div>
         </div>
@@ -490,9 +493,9 @@
             <div class="card-body p-4">
             </div>
             <!-- Title and Text (Centered) -->
-            <div class="card-overlay">
-              <h6 class="card-title  text-center  fs-4">Aluminum Partations</h6>
-              <p class="card-overlay-text">It provide a sleek, durable, and flexible solution for space management.</p>
+            <div class="overlay">
+              <h5 class="overlay-title fs-4">Aluminum Partations</h5>
+              <p class="overlay-text text-center">A sleek, durable, and flexible solution for space management.</p>
             </div>
           </div>
         </div>
