@@ -79,33 +79,35 @@ h5 {
 }
 
 
-@media (max-width: 567.98px) {
+@media (max-width: 576px) {
   .hero-section {
     margin-top: 7em;
-    /* Adjust margin for small screens */
   }
   .services-section .overlay-title{
-    font-size: 15px;
+    font-size: 5px;
   }
-  .services-section p{
-    font-size: 12px;
+  .services-section .overlay-text{
+    font-size: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .services-section p{
-    font-size: 12px;
+    font-size: 15px;
   }
 
 }
 
 @media (min-width: 992px) {
+  .nav-two{
+    margin-bottom: 5em;
+  }
   .mission-text {
     font-size: 2rem;
     /* Increase font size for large devices */
   }
-  .services-section p{
-    font-size: 15px;
+  .overlay-text{
+    font-size: 20px;
   }
 
 }
@@ -191,6 +193,5 @@ height:100%; /* Increase height on hover */
 /* Make paragraph text appear on hover */
 .services-section .card:hover .overlay-text {
 opacity: 1; /* Make the text visible */
-max-height: 50px; /* Set max-height to allow text expansion */
+max-height: 70px; /* Set max-height to allow text expansion */
 }
-
