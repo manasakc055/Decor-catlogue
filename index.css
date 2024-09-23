@@ -1,0 +1,196 @@
+
+h1,
+h2,
+h5,
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+p,h6{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; 
+}
+.hero-title h1,
+.contact-section h2 span,
+h2 span,
+p span {
+  font-family: 'Dancing Script', cursive;
+}
+.btn {
+  background-color: #401714;
+  color: white;
+  border-radius: 0;
+
+}
+.btn>a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  background-color: #401714;
+  color: white;
+}
+
+nav .nav-items li,
+.navbar-nav li a {
+  color: #401714;
+}
+
+/* .navbar{
+    border-bottom:1px thin #401714;
+
+} */
+
+
+h1,
+h2,
+h5 {
+  color: #401714;
+}
+
+/* Inline styles to ensure no external CSS conflicts */
+.card .btn {
+  border-radius: 0;
+  text-decoration: none;
+  color: white;
+  /* Remove border radius */
+}
+.card,.card-img-top {
+  border-radius: 0;
+  /* Remove border radius from card images */
+}
+
+.mission-text {
+  font-size: 1rem;
+  /* Default font size for small devices */
+}
+
+.services-section .card {
+  aspect-ratio: 1 / 1;
+  /* Ensures square aspect ratio */
+  border-radius:7px;
+}
+
+
+.card:hover .icon-img {
+  filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 567.98px) {
+  .hero-section {
+    margin-top: 7em;
+    /* Adjust margin for small screens */
+  }
+  .services-section .overlay-title{
+    font-size: 15px;
+  }
+  .services-section p{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-section p{
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .mission-text {
+    font-size: 2rem;
+    /* Increase font size for large devices */
+  }
+  .services-section p{
+    font-size: 15px;
+  }
+
+}
+/******Projec-section**************/
+.projects-section .card-body{
+    border-radius: 0;
+}
+
+/***********section-3*************/
+.section-3 {
+  min-height: 100vh;
+}
+
+.section-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.section-3 .col {
+  height: 50vh;
+}
+
+.projects-section .card-img-top {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0;
+
+
+}
+
+.social-media-icons i {
+  color: #401714;
+}
+
+.icon-img:hover {
+  filter: brightness(0) invert(1);
+}
+/****************animation********************/
+/* Card Styling */
+/* Overlay styling */
+.services-section .overlay {
+position: absolute;
+border-radius:7px;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 50px; /* Initial height */
+background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: height 0.3s ease-in-out; /* Smooth transition for height */
+overflow: hidden; /* Ensure text stays inside when resizing */
+}
+
+/* Title styling */
+.services-section .overlay-title {
+color: white;
+font-size: 18px;
+margin: 0;
+transition: font-size 0.3s ease; /* Optional: Increase font size */
+}
+
+/* Paragraph text initially hidden */
+.services-section .overlay-text {
+color: white;
+font-size: 14px;
+opacity: 0; /* Initially hidden */
+max-height: 0;
+overflow: hidden;
+transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth appearance */
+margin: 5px 0 0; /* Space below the title */
+}
+
+/* On hover, increase the height of the overlay */
+.services-section .card:hover .overlay {
+height:100%; /* Increase height on hover */
+}
+
+/* Make paragraph text appear on hover */
+.services-section .card:hover .overlay-text {
+opacity: 1; /* Make the text visible */
+max-height: 50px; /* Set max-height to allow text expansion */
+}
+
