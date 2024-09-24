@@ -15,112 +15,64 @@
     p span {
       font-family: 'Dancing Script', cursive;
     }
-    .btn-s {
+    .btn {
+      background-color: #fcfcfc;
+      color:#401714;
+      border:2.5px solid #401714;
+      border-radius: 5px;
+      text-decoration: none; /* Keeps the text decoration removed on hover */
+    }
+    .btn-call{
+      color: white;
+      text-decoration:none ;
+      border:2.5px solid #ffffff;
+      border-radius: 5px;
+    }
+    footer a:hover{
+      color: #ffffff;
+
+    }
+
+    .btn:hover {
       background-color: #401714;
       color: white;
-      border-radius: 0;
-      text-decoration: none;
-
+      border-radius: 5px;
+      text-decoration: none; 
     }
-    .btn-s>a {
-      color: white;
-      text-decoration: none;
-
-    }
-
-    .btn-s:hover {
+    a:active {
       background-color: #401714;
       color: white;
-    }
+      border-radius: 5px;
+      text-decoration: none; 
 
+    }
     nav .nav-items li,
     .navbar-nav li a {
       color: #401714;
     }
-
-    /* .navbar{
-        border-bottom:1px thin #401714;
-
-    } */
-
-
     h1,
     h2,
     h5 {
       color: #401714;
     }
-
-    /* Inline styles to ensure no external CSS conflicts */
-    .card .btn {
-      border-radius: 0;
-      text-decoration: none;
-      color: white;
-      /* Remove border radius */
-    }
-
     .card {
       border-radius: 0;
     }
-
     .card-img-top {
-      border-radius: 0;
       /* Remove border radius from card images */
+      border-radius: 0;
     }
-
     .mission-text {
       font-size: 1rem;
-      /* Default font size for small devices */
     }
-
     .services-section .card {
       aspect-ratio: 1 / 1;
       /* Ensures square aspect ratio */
-      border-radius:7px;
     }
-
-
     .card:hover .icon-img {
       filter: brightness(0) invert(1);
     }
 
-
-    @media (max-width: 567.98px) {
-      .hero-section {
-        margin-top: 7em;
-        /* Adjust margin for small screens */
-      }
-      .services-section .overlay-title{
-        font-size: 15px;
-      }
-      .services-section p{
-        font-size: 12px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .services-section p{
-        font-size: 12px;
-      }
-
-    }
-
-    @media (min-width: 992px) {
-      .nav-two{
-        margin-bottom: 5em;
-      }
-      .mission-text {
-        font-size: 2rem;
-        /* Increase font size for large devices */
-      }
-    .mission-text {
-      font-size: 2rem;
-      /* Increase font size for large devices */
-    }
-  .overlay-text{
-    font-size: 20px;
-  }
-
-    }
    /******Projec-section**************/
   .projects-section .card-body{
       border-radius: 0;
@@ -156,52 +108,82 @@
       filter: brightness(0) invert(1);
     }
     /****************animation********************/
-   /* Card Styling */
-/* Overlay styling */
-.overlay {
-  position: absolute;
-  border-radius:7px;
+  /* Overlay styling */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Initial height */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out; /* Smooth transition for height */
+    overflow: hidden; /* Ensure text stays inside when resizing */
+  }
+  /* Title styling */
+  .overlay-title {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    transition: font-size 0.3s ease; /* Optional: Increase font size */
+  }
+  /* Paragraph text initially hidden */
+  .overlay-text {
+    color: white;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth appearance */
+    margin: 5px 0 0; /* Space below the title */
+  }
+  /* On hover, increase the height of the overlay */
+  .card:hover .overlay {
+    height:100%; 
+  }
+  /* Make paragraph text appear on hover */
+  .card:hover .overlay-text {
+    opacity: 1; /* Make the text visible */
+    max-height: 70px; /* Set max-height to allow text expansion */
+  }
 
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px; /* Initial height */
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: height 0.3s ease-in-out; /* Smooth transition for height */
-  overflow: hidden; /* Ensure text stays inside when resizing */
-}
+  @media (max-width: 567.98px) {
+        .hero-section {
+          margin-top: 7em;
+          /* Adjust margin for small screens */
+        }
+        .services-section .overlay-title{
+          font-size: 15px;
+        }
+        .services-section p{
+          font-size: 12px;
+        }
+      }
 
-/* Title styling */
-.overlay-title {
-  color: white;
-  font-size: 18px;
-  margin: 0;
-  transition: font-size 0.3s ease; /* Optional: Increase font size */
-}
+      @media (min-width: 768px) {
+        .services-section p{
+          font-size: 12px;
+        }
 
-/* Paragraph text initially hidden */
-.overlay-text {
-  color: white;
-  font-size: 14px;
-  opacity: 0; /* Initially hidden */
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth appearance */
-  margin: 5px 0 0; /* Space below the title */
-}
+      }
 
-/* On hover, increase the height of the overlay */
-.card:hover .overlay {
-  height:100%; /* Increase height on hover */
-}
+      @media (min-width: 992px) {
+        .nav-two{
+          margin-bottom: 5em;
+        }
+        .mission-text {
+          font-size: 2rem;
+          /* Increase font size for large devices */
+        }
+      .mission-text {
+        font-size: 2rem;
+        /* Increase font size for large devices */
+      }
+    .overlay-text{
+      font-size: 20px;
+    }
 
-/* Make paragraph text appear on hover */
-.card:hover .overlay-text {
-  opacity: 1; /* Make the text visible */
-  max-height: 70px; /* Set max-height to allow text expansion */
-}
-
+      }
