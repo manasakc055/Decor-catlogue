@@ -36,22 +36,48 @@
       font-family: 'Dancing Script', cursive;
     }
     .btn {
-      background-color: #401714;
-      color: white;
-      border-radius: 0;
+      background-color: #fcfcfc;
+      color:#401714;
+      border:0.2px solid #401714;
+      border-radius: 5px;
+      text-decoration: none; /* Keeps the text decoration removed on hover */
+
 
     }
-    .btn>a {
-      color: white;
+  
+    /* .btn-work a{
+      color: #401714;
       text-decoration: none;
-
     }
+    .btn-work a:hover{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .btn-work{
+      border: 0.2px solid #401714;
+      border-radius: 5px;
+      background-color: white;
+      
+    }
+    .btn-work:hover{
+      background-color: #401714;
+      border-radius: 5px;
+    } */
 
     .btn:hover {
       background-color: #401714;
       color: white;
-    }
+      border-radius: 5px;
+      text-decoration: none; /* Keeps the text decoration removed on hover */
 
+    }
+    a:active {
+      background-color: #401714;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none; /* Keeps the text decoration removed on hover */
+
+    }
     nav .nav-items li,
     .navbar-nav li a {
       color: #401714;
@@ -70,12 +96,12 @@
     }
 
     /* Inline styles to ensure no external CSS conflicts */
-    .card .btn {
+    /* .card .btn {
       border-radius: 0;
       text-decoration: none;
       color: white;
       /* Remove border radius */
-    }
+    
 
     .card {
       border-radius: 0;
@@ -271,9 +297,9 @@
         </h1>
       </div>
       <div class="col-lg-4 text-lg-end text-center mt-3 mt-lg-0">
-        <button class="btn btn-custom  p-2">
-          <a href="#projects">Check Our work</a>
-        </button>
+        <a class="btn btn-work p-2" href="#projects">
+          Check Our Work
+        </a>
       </div>
     </div>
   </header>
@@ -562,29 +588,29 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-4">
-                <div class="card shadow-sm rounded">
-                  <img src="assets/pro2.webp" class="card-img-top rounded-top" alt="Design Project Development">
+                <div class="card shadow-sm ">
+                  <img src="assets/pro2.webp" class="card-img-top " alt="Design Project Development">
                   <div class="card-body">
                     <h5 class="card-title">Design project development</h5>
-                    <a href="#" class="btn btn-link">View</a>
+                    <!-- <a href="#" class="btn" >View</a> -->
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card shadow-sm rounded">
-                  <img src="assets/pro3.webp" class="card-img-top rounded-top" alt="Furniture and Decor Selection">
+                <div class="card shadow-sm ">
+                  <img src="assets/pro3.webp" class="card-img-top " alt="Furniture and Decor Selection">
                   <div class="card-body">
                     <h5 class="card-title">Furniture and decor selection</h5>
-                    <a href="#" class="btn btn-link">View</a>
+                    <!-- <a href="#" class="btn btn-link">View</a> -->
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card shadow-sm rounded">
-                  <img src="assets/pro4.webp" class="card-img-top rounded-top" alt="Selection of Colors and Materials">
+                <div class="card shadow-sm ">
+                  <img src="assets/pro4.webp" class="card-img-top " alt="Selection of Colors and Materials">
                   <div class="card-body">
                     <h5 class="card-title">Selection of colors and materials</h5>
-                    <a href="#" class="btn btn-link">View</a>
+                    <!-- <a href="#" class="btn btn-link">View</a> -->
                   </div>
                 </div>
               </div>
@@ -595,29 +621,29 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-4">
-                <div class="card shadow-sm rounded">
-                  <img src="assets/a2.webp" class="card-img-top rounded-top" alt="Lighting Solutions">
+                <div class="card shadow-sm ">
+                  <img src="assets/a2.webp" class="card-img-top " alt="Lighting Solutions">
                   <div class="card-body">
                     <h5 class="card-title">Lighting Solutions</h5>
-                    <a href="#" class="btn btn-link">View</a>
+                    <!-- <a href="#" class="btn btn-link">View</a> -->
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card shadow-sm rounded">
-                  <img src="assets/pro5.webp" class="card-img-top rounded-top" alt="Space Planning">
+                <div class="card shadow-sm ">
+                  <img src="assets/pro5.webp" class="card-img-top " alt="Space Planning">
                   <div class="card-body">
                     <h5 class="card-title">Space Planning</h5>
-                    <a href="#" class="btn btn-link">View</a>
+                    <!-- <a href="#" class="btn btn-link">View</a> -->
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card shadow-sm rounded">
-                  <img src="assets/pro6.webp" class="card-img-top rounded-top" alt="Material Selection">
+                <div class="card shadow-sm ">
+                  <img src="assets/pro6.webp" class="card-img-top " alt="Material Selection">
                   <div class="card-body">
                     <h5 class="card-title">Material Selection</h5>
-                    <a href="#" class="btn btn-link">View</a>
+                    <!-- <a href="#" class="btn btn-link">View</a> -->
                   </div>
                 </div>
               </div>
@@ -646,56 +672,56 @@
       <div class="d-md-none mt-5">
         <div class="row">
           <div class="col-12 mb-4">
-            <div class="card shadow-sm rounded">
-              <img src="assets/pro2.webp" class="card-img-top  rounded-top" alt="Design Project Development">
+            <div class="card shadow-sm ">
+              <img src="assets/pro2.webp" class="card-img-top  " alt="Design Project Development">
               <div class="card-body">
                 <h5 class="card-title"> geometric pattern of blue panels,accented by gold metallic lines</h5>
-                <a href="#" class="btn btn-link">View</a>
+                <!-- <a href="#" class="btn btn-link">View</a> -->
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
-            <div class="card shadow-sm rounded">
-              <img src="assets/pro3.webp" class="card-img-top rounded-top" alt="Furniture and Decor Selection">
+            <div class="card shadow-sm ">
+              <img src="assets/pro3.webp" class="card-img-top " alt="Furniture and Decor Selection">
               <div class="card-body ">
                 <h5 class="card-title">Steel railing with wooden steps</h5>
-                <a href="#" class="btn btn-link">View</a>
+                <!-- <a href="#" class="btn btn-link">View</a> -->
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
-            <div class="card shadow-sm rounded">
-              <img src="assets/pro4.webp" class="card-img-top rounded-top" alt="Selection of Colors and Materials">
+            <div class="card shadow-sm ">
+              <img src="assets/pro4.webp" class="card-img-top " alt="Selection of Colors and Materials">
               <div class="card-body">
                 <h5 class="card-title">balcony with frosted glass panels as the railing</h5>
-                <a href="#" class="btn btn-link">View</a>
+                <!-- <a href="#" class="btn btn-link">View</a> -->
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
-            <div class="card shadow-sm rounded">
-              <img src="assets/pro5.webp" class="card-img-top rounded-top" alt="Lighting Solutions">
+            <div class="card shadow-sm ">
+              <img src="assets/pro5.webp" class="card-img-top " alt="Lighting Solutions">
               <div class="card-body">
                 <h5 class="card-title">Aluminum paratitions</h5>
-                <a href="#" class="btn btn-link">View</a>
+                <!-- <a href="#" class="btn btn-link">View</a> -->
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
-            <div class="card shadow-sm rounded">
-              <img src="assets/pro6.webp" class="card-img-top rounded-top" alt="Lighting Solutions">
+            <div class="card shadow-sm ">
+              <img src="assets/pro6.webp" class="card-img-top " alt="Lighting Solutions">
               <div class="card-body">
                 <h5 class="card-title">A wooden door</h5>
-                <a href="#" class="btn btn-link">View</a>
+                <!-- <a href="#" class="btn btn-link">View</a> -->
               </div>
             </div>
           </div>
           <div class="col-12 mb-4">
-            <div class="card shadow-sm rounded">
-              <img src="assets/pro1.webp" class="card-img-top rounded-top" alt="Lighting Solutions">
+            <div class="card shadow-sm ">
+              <img src="assets/pro1.webp" class="card-img-top " alt="Lighting Solutions">
               <div class="card-body">
                 <h5 class="card-title">Lighting Solutions</h5>
-                <a href="#" class="btn btn-link">View</a>
+                <!-- <a href="#" class="btn btn-link">View</a> -->
               </div>
             </div>
           </div>
