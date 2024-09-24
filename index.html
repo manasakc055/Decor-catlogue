@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   <!-- Google Fonts Raleway -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
 
   <!-- <link href="/your-path-to-uicons/css/uicons-rounded-solid.css" rel="stylesheet"> -->
 
@@ -18,12 +17,219 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  
+  <style>
+    h1,
+    h2,
+    h5,
+    .card-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+    p,h6{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400; 
+    }
+    .hero-title h1,
+    .contact-section h2 span,
+    h2 span,
+    p span {
+      font-family: 'Dancing Script', cursive;
+    }
+    .btn {
+      background-color: #401714;
+      color: white;
+      border-radius: 0;
+
+    }
+    .btn>a {
+      color: white;
+      text-decoration: none;
+
+    }
+
+    .btn:hover {
+      background-color: #401714;
+      color: white;
+    }
+
+    nav .nav-items li,
+    .navbar-nav li a {
+      color: #401714;
+    }
+
+    /* .navbar{
+        border-bottom:1px thin #401714;
+
+    } */
+
+
+    h1,
+    h2,
+    h5 {
+      color: #401714;
+    }
+
+    /* Inline styles to ensure no external CSS conflicts */
+    .card .btn {
+      border-radius: 0;
+      text-decoration: none;
+      color: white;
+      /* Remove border radius */
+    }
+
+    .card {
+      border-radius: 0;
+    }
+
+    .card-img-top {
+      border-radius: 0;
+      /* Remove border radius from card images */
+    }
+
+    .mission-text {
+      font-size: 1rem;
+      /* Default font size for small devices */
+    }
+
+    .services-section .card {
+      aspect-ratio: 1 / 1;
+      /* Ensures square aspect ratio */
+      border-radius:7px;
+    }
+
+
+    .card:hover .icon-img {
+      filter: brightness(0) invert(1);
+    }
+
+
+    @media (max-width: 567.98px) {
+      .hero-section {
+        margin-top: 7em;
+        /* Adjust margin for small screens */
+      }
+      .services-section .overlay-title{
+        font-size: 15px;
+      }
+      .services-section p{
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .services-section p{
+        font-size: 12px;
+      }
+
+    }
+
+    @media (min-width: 992px) {
+      .nav-two{
+        margin-bottom: 5em;
+      }
+      .mission-text {
+        font-size: 2rem;
+        /* Increase font size for large devices */
+      }
+    .mission-text {
+      font-size: 2rem;
+      /* Increase font size for large devices */
+    }
+  .overlay-text{
+    font-size: 20px;
+  }
+
+    }
+   /******Projec-section**************/
+  .projects-section .card-body{
+      border-radius: 0;
+  }
+
+
+    /***********section-3*************/
+    .section-3 {
+      min-height: 100vh;
+    }
+
+    .section-3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .section-3 .col {
+      height: 50vh;
+    }
+
+    .projects-section .card-img-top {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .social-media-icons i {
+      color: #401714;
+    }
+
+    .icon-img:hover {
+      filter: brightness(0) invert(1);
+    }
+    /****************animation********************/
+   /* Card Styling */
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  border-radius:7px;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Initial height */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease-in-out; /* Smooth transition for height */
+  overflow: hidden; /* Ensure text stays inside when resizing */
+}
+
+/* Title styling */
+.overlay-title {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  transition: font-size 0.3s ease; /* Optional: Increase font size */
+}
+
+/* Paragraph text initially hidden */
+.overlay-text {
+  color: white;
+  font-size: 14px;
+  opacity: 0; /* Initially hidden */
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth appearance */
+  margin: 5px 0 0; /* Space below the title */
+}
+
+/* On hover, increase the height of the overlay */
+.card:hover .overlay {
+  height:100%; /* Increase height on hover */
+}
+
+/* Make paragraph text appear on hover */
+.card:hover .overlay-text {
+  opacity: 1; /* Make the text visible */
+  max-height: 70px; /* Set max-height to allow text expansion */
+}
+
+  </style>
 </head>
 
 <body>
-  <!-- Main Navbar for Large Devices -->
-  <nav class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex ">
+   <!-- Main Navbar for Large Devices -->
+   <nav class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex ">
     <a class="navbar-brand" href="#">
       <img src="assets/logo.svg" width="160" height="75" alt="Logo">
     </a>
@@ -69,10 +275,10 @@
               <a class="nav-link active" aria-current="page" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Projects</a>
+              <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
             </li>
           </ul>
           <button class="btn btn-custom mt-3" type="submit">Order a call</button>
@@ -212,7 +418,7 @@
     </div>
   </div>
   <!------------Services-Section -------->
-  <section id="services"class="services-section py-5 mt-5 mb-5 rounded">
+  <section id="services" class="services-section py-5 mt-5 mb-5 rounded">
     <div class="container">
       <!-- Section Title -->
       <div class="row">
@@ -522,7 +728,7 @@
     </div>
   </section>
   <!-------------Contact Section --------->
-  <section class=" contact-section container mt-5 mb-5" style="margin-top: 10rem;">
+  <section id="contact" class=" contact-section container mt-5 mb-5" style="margin-top: 10rem;">
     <div class="row">
       <!-- Section Title -->
       <div class="col-md-6">

@@ -15,19 +15,20 @@
     p span {
       font-family: 'Dancing Script', cursive;
     }
-    .btn {
+    .btn-s {
       background-color: #401714;
       color: white;
       border-radius: 0;
+      text-decoration: none;
 
     }
-    .btn>a {
+    .btn-s>a {
       color: white;
       text-decoration: none;
 
     }
 
-    .btn:hover {
+    .btn-s:hover {
       background-color: #401714;
       color: white;
     }
