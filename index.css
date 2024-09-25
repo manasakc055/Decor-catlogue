@@ -15,7 +15,7 @@
     p span {
       font-family: 'Dancing Script', cursive;
     }
-    header.btn ,.projects-section.btn{
+    .btn ,.projects-section.btn{
       background-color: #fcfcfc;
       color:#401714;
       border:2.5px solid #401714;
@@ -32,14 +32,13 @@
       color: #ffffff;
 
     }
-
-    header.btn:hover ,.projects-section.btn:hover{
+    .btn:hover ,.projects-section.btn:hover{
       background-color: #401714;
       color: white;
       border-radius: 5px;
       text-decoration: none; 
     }
-    header.btn a:active,.projects-section.btn a:active {
+    .btn a:active,.projects-section.btn a:active {
       background-color: #401714;
       color: white;
       border-radius: 5px;
