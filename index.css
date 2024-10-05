@@ -1,19 +1,25 @@
+    body{
+      background-color: #FFFBFB;
+    }
     h1,
     h2,
     h5,
     .card-title {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
     }
     p,h6{
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 400; 
     }
-    .hero-title h1,
+    .hero-section-cards p{
+      font-size: 15px;
+      color:#401714;
+    }
     .contact-section h2 span,
     h2 span,
-    p span {
-      font-family: 'Dancing Script', cursive;
+    p span , header span{
+      font-family: 'Dynalight', cursive;
     }
     .btn ,.projects-section.btn{
       background-color: #fcfcfc;
@@ -27,7 +33,10 @@
       text-decoration:none ;
       border:2.5px solid #ffffff;
       border-radius: 5px;
-    }
+    } .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      margin: 0 10px;
+    } 
     footer a:hover{
       color: #ffffff;
 
@@ -38,13 +47,13 @@
       border-radius: 5px;
       text-decoration: none; 
     }
-    .btn a:active,.projects-section.btn a:active {
+    /* .btn a:active,.projects-section.btn a:active {
       background-color: #401714;
       color: white;
       border-radius: 5px;
       text-decoration: none; 
 
-    }
+    } */
     nav .nav-items li,
     .navbar-nav li a {
       color: #401714;
@@ -148,11 +157,10 @@
     opacity: 1; /* Make the text visible */
     max-height: 70px; /* Set max-height to allow text expansion */
   }
-
+/* 
   @media (max-width: 567.98px) {
         .hero-section {
           margin-top: 7em;
-          /* Adjust margin for small screens */
         }
         .services-section .overlay-title{
           font-size: 15px;
@@ -175,14 +183,12 @@
         }
         .mission-text {
           font-size: 2rem;
-          /* Increase font size for large devices */
         }
       .mission-text {
         font-size: 2rem;
-        /* Increase font size for large devices */
       }
     .overlay-text{
       font-size: 20px;
     }
 
-      }
+      } */
