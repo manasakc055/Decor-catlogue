@@ -16,6 +16,7 @@
   <!--Index.css-->
   <link rel="stylesheet" href="index.css">
   <style>
+ 
     .navbar-nav .nav-link {
       font-size: 1.1rem;
       margin: 0 10px;
@@ -49,84 +50,94 @@
         .description {
             color: gray;
         }
+        .custom-container .container-fluid {
+            max-width: 900px; /* Or your preferred width */
+        }
+
+        
   </style>
 </head>
 
 <body>
  <!-- Main Navbar for All Devices -->
-  <nav class="navbar  navbar-light container">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-          <img src="assets/logo.svg" width="160" height="75" alt="Logo">
-      </a>
-          <ul class="navbar-nav ms-auto d-flex flex-row mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-              </li>
-          </ul>
-          <a href="tel:+1234567890" style="color: #401714;">Call Now</a>
-    </div>
-  </nav>
+ <nav class="navbar navbar-light custom-container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" width="160" height="75" alt="Logo">
+    </a>
+    <ul class="navbar-nav ms-auto d-flex flex-row mx-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+    <a href="tel:+1234567890" style="color: #401714;">Call Now</a>
+  </div>
+</nav>
+
 
   <!---------Hero Section ---------->
-  <header class="container mb-5 mt-4 mt-1">
-    <div class="row align-items-center">
-      <div class="col-8  hero-title ">
-        <h1 class="display-6">
-          <span>C</span>harmonious<span> & </span>practical interiors for life <span>&</span> work
-        </h1>
-      </div>
-      <div class="col-4 text-end  mt-3 ">
-        <a class="btn btn-work p-2" href="#projects">
-          Check Our Work
-        </a>
+  <header class="custom-container mb-5 mt-4 mt-1">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-8  hero-title ">
+          <h1 class="display-6">
+            <span>C</span>harmonious<span> & </span>practical interiors for life <span>&</span> work
+          </h1>
+        </div>
+        <div class="col-4 text-end  mt-3 ">
+          <a class="btn btn-work p-2" href="#projects">
+            Check Our Work
+          </a>
+        </div>
       </div>
     </div>
   </header>
   <!----------Card Section ------------>
-  <section class="hero-section-cards container my-5 d-none d-md-block">
-    <div class="row d-flex align-items-stretch">
-      <!-- Card 1 (Larger card) -->
-      <div class="col-md-6 mb-4 d-flex">
-        <div class="card card-large h-100 w-100">
-          <img src="assets/h1.jpg" class="card-img-top" alt="Image 1" style="height: 100%; object-fit: cover;">
-          <!-- <div class="card-body"> -->
-            <!-- <p class="card-para">Modren interior </p> -->
-            <!-- <p class="card-text">This is the larger card with a custom height and width.</p> -->
-          <!-- </div> -->
+  <section class="custom-container hero-section-cards  my-5 d-none d-md-block">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-stretch">
+        <!-- Card 1 (Larger card) -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="card card-large h-100 w-100">
+            <img src="assets/h1.jpg" class="card-img-top" alt="Image 1" style="height: 100%; object-fit: cover;">
+            <!-- <div class="card-body"> -->
+              <!-- <p class="card-para">Modren interior </p> -->
+              <!-- <p class="card-text">This is the larger card with a custom height and width.</p> -->
+            <!-- </div> -->
+          </div>
         </div>
-      </div>
 
-      <!-- Card 2 (Smaller card) -->
-      <div class="col-md-3 mb-4 d-flex">
-        <div class="card card-small h-100 w-100">
-          <img src="assets/h4.jpg" class="card-img-top" alt="Image 2" style="height: 100%; object-fit: cover;">
-          <!-- <div class="card-body"> -->
-            <!-- <p class="card-para">Perfect execution</p> -->
-            <!-- <p class="card-text">This is one of the smaller cards.</p> -->
-          <!-- </div> -->
+        <!-- Card 2 (Smaller card) -->
+        <div class="col-md-3 mb-4 d-flex">
+          <div class="card card-small h-100 w-100">
+            <img src="assets/h4.jpg" class="card-img-top" alt="Image 2" style="height: 100%; object-fit: cover;">
+            <!-- <div class="card-body"> -->
+              <!-- <p class="card-para">Perfect execution</p> -->
+              <!-- <p class="card-text">This is one of the smaller cards.</p> -->
+            <!-- </div> -->
+          </div>
         </div>
-      </div>
 
-      <!-- Card 3 (Smaller card) -->
-      <div class="col-md-3 mb-4 d-flex">
-        <div class="card card-small h-100 w-100">
-          <img src="assets/h3.jpg" class="card-img-top" alt="Image 3" style="height: 100%; object-fit: cover;">
-          <!-- <div class="card-body"> -->
-            <!-- <p class="card-para">dramntic look</p> -->
-            <!-- <p class="card-text">This is the second smaller card.</p> -->
-          <!-- </div> -->
+        <!-- Card 3 (Smaller card) -->
+        <div class="col-md-3 mb-4 d-flex">
+          <div class="card card-small h-100 w-100">
+            <img src="assets/h3.jpg" class="card-img-top" alt="Image 3" style="height: 100%; object-fit: cover;">
+            <!-- <div class="card-body"> -->
+              <!-- <p class="card-para">dramntic look</p> -->
+              <!-- <p class="card-text">This is the second smaller card.</p> -->
+            <!-- </div> -->
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Carousel for small screens (visible only on small devices) -->
+  <!-- Not used in this project Carousel for small screens (visible only on small devices) -->
   <div id="imageCarousel" class="carousel slide carousel-fade d-block d-md-none mt-3" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- Slide 1 -->
@@ -167,7 +178,7 @@
 
   <!---------- Mission Section-1--------->
   <section>
-      <div class="container mb-5 mt-5 ">
+      <div class="custom-container mb-5 mt-5 ">
         <!-- Header -->
         <!-- <div class="row mt-5">
           <div class="col-12">
@@ -186,13 +197,15 @@
           </div>
         </div> -->
         <!-- Mission Text -->
-        <div class="row py-4">
-          <div class="col-12 px-lg-5"style="padding: 0 15px 0 15px";>
-            <p class="fst-italic text-center px-lg-5  mission-text" style="font-size:20px; padding: 0 25px;">
-              <span>A</span> full range of services, from concept development to project implementation. Our team of
-              professional
-              designers has extensive experience working in different styles from classic to modern.
-            </p>
+        <div class="container-fluid">
+          <div class="row py-4">
+            <div class="col-12 px-lg-5"style="padding: 0 15px 0 15px";>
+              <p class="fst-italic text-center px-lg-5  mission-text" style="font-size:20px; padding: 0 25px;">
+                <span>A</span> full range of services, from concept development to project implementation. Our team of
+                professional
+                designers has extensive experience working in different styles from classic to modern.
+              </p>
+            </div>
           </div>
         </div>
         <!-- Bottom Row (Images) -->
@@ -208,150 +221,153 @@
         </div> -->
       </div>
   </section>
-  <!------------msssssssssss---------->
-  <section class="container my-5">
-  
-    <div class="row content-section">
-        <!-- Image Section -->
-        <div class="col-md-6 image-section">
-            <img src="p6.webp" alt="Cozy Minimalist">
-        </div>
+  <!------------mission Section-2---------->
+  <section class="custom-container my-5">
+    <div class="container-fluid">
+      <div class="row content-section">
+          <!-- Image Section -->
+          <div class="col-md-6 image-section">
+              <img src="p6.webp" alt="Cozy Minimalist">
+          </div>
 
-        <!-- Text and Stats Section -->
-        <div class="col-md-6 ps-2" >
-              <!-- Header  -->
-        <div class="row mt-lg-5 ">
-            <div class="col-12">
-              <h6 class="text-start fw-bold">Our Mission</h6>
-            </div>
-          </div> 
-            <h2 class="fw-bold"><span>C</span>reative solutions by professional designers</h2>
-            <p class="description">Creative Solutions harnesses the expertise of professional designers to transform innovative ideas into impactful realities.</p>
-            <div class="stats text-start">
-                <!-- <div>
-                    <span>750+</span>
-                    <p>Furniture</p>
-                </div> -->
-                <div>
-                    <span>150+</span>
-                    <p>Projects</p>
-                </div>
-                <div>
-                    <span>180+</span>
-                    <p>Happy client</p>
-                </div>
-            </div>
-        </div>
+          <!-- Text and Stats Section -->
+          <div class="col-md-6 ps-2" >
+                <!-- Header  -->
+          <div class="row mt-lg-5 ">
+              <div class="col-12">
+                <h6 class="text-start fw-bold">Our Mission</h6>
+              </div>
+            </div> 
+              <h2 class="fw-bold"><span>C</span>reative solutions by professional designers</h2>
+              <p class="description">Creative Solutions harnesses the expertise of professional designers to transform innovative ideas into impactful realities.</p>
+              <div class="stats text-start">
+                  <!-- <div>
+                      <span>750+</span>
+                      <p>Furniture</p>
+                  </div> -->
+                  <div>
+                      <span>150+</span>
+                      <p>Projects</p>
+                  </div>
+                  <div>
+                      <span>180+</span>
+                      <p>Happy client</p>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
-</section>
+ </section>
   <!------------Services-Section-2 -------->
   <section id="services" class="services-section py-5 mt-5 mb-5 rounded">
-    <div class="container">
-      <!-- Section Title -->
-      <div class="row">
-        <div class="col-12">
-          <h6 class="text-start fw-bold mb-3">Our Services</h6>
-          <h2 class="text-start fw-bold services-title"><span> W</span>e work with both residential <br> <span
-              class="fw-normal">&
-              commercial spaces</span></h2>
+    <div class="custom-container">
+      <div class="container-fluid">
+        <!-- Section Title -->
+        <div class="row">
+          <div class="col-12">
+            <h6 class="text-start fw-bold mb-3">Our Services</h6>
+            <h2 class="text-start fw-bold services-title"><span> W</span>e work with both residential <br> <span
+                class="fw-normal">&
+                commercial spaces</span></h2>
+          </div>
         </div>
-      </div>
-      <!-- Row 1 -->
-      <div class="row row-cols-2 row-cols-md-3 g-4 mt-1">
+        <!-- Row 1 -->
+        <div class="row row-cols-2 row-cols-md-3 g-4 mt-1">
 
-       <!-- Box 1 -->
-       <div class="col">
-        <div class="card service-card position-relative d-flex flex-column align-items-center justify-content-center" style="background-image: url('assets/windows.webp'); background-size: cover; background-position: center;">
-          <div class="card-body text-center p-4">
-          </div>
-          <!-- Overlay -->
-          <div class="overlay">
-            <h5 class="overlay-title text-center ">Upvc Windows</h6>
-            <p class="overlay-text text-center">UPVC windows are durable, energy-efficient, and low-maintenance.</p>
-          </div>
-        </div>
-      </div>
-        <!-- Box 2 -->
-      <div class="col">
-        <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/wall1.jpeg'); background-size: cover; background-position: center;">
-          <div class="card-body text-center p-4" >
-          </div>
-          <!-- Title and Text (Centered) -->
-          <div class="overlay">
-            <h5 class="overlay-title text-center ">Wallpaper</h5>
-            <p class="overlay-text text-center">transforming spaces with various designs and patterns.</p>
-          </div>
-        </div>
-      </div>
-        <!-- Box 3 -->
-        <div class="col">
-          <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/pvc.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-body text-center p-4">
-            </div>
-            <!-- Title and Text (Centered) -->
-            <div class="overlay">
-              <h5 class="overlay-title text-center ">Pvc panal&Rafters</h5>
-              <p class="overlay-text text-center">These are lightweight, weather-resistant, and low-maintenance.</p>
+          <!-- Box 1 -->
+          <div class="col">
+            <div class="card service-card position-relative d-flex flex-column align-items-center justify-content-center" style="background-image: url('assets/windows.webp'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4">
+              </div>
+              <!-- Overlay -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">Upvc Windows</h6>
+                <p class="overlay-text text-center">UPVC windows are durable, energy-efficient, and low-maintenance.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Box 4 -->
-        <div class="col">
-          <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/stair1.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-body text-center p-4">
-            </div>
-            <!-- Title and Text (Centered) -->
-            <div class="overlay">
-              <h5 class="overlay-title text-center ">Quality Steel railing </h5>
-              <p class="overlay-text text-center">A perfect blend of strength,durability, adding a stylish touch to any space.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Box 5 -->
-        <div class="col">
-          <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/blend1.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-body text-center p-4">
-            </div>
-            <!-- Title and Text (Centered) -->
-            <div class="overlay">
-              <h5 class="overlay-title text-center ">Blinds & Mosquito doors</h5>
-              <p class="overlay-text text-center">These doors provide privacy and protection from insects.</p>
+            <!-- Box 2 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/wall1.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4" >
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">Wallpaper</h5>
+                <p class="overlay-text text-center">transforming spaces with various designs and patterns.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Box 6 -->
-        <div class="col">
-          <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/ele.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-body text-center p-4">
-            </div>
-            <!-- Title and Text (Centered) -->
-            <div class="overlay">
-              <h5 class="overlay-title text-center ">Elevation Glass</h5>
-              <p class="overlay-text text-center">Enhances building aesthetics with sleek, modern design and natural light.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Box 7 -->
-        <div class="col">
-          <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/door1.jpeg'); background-size: cover; background-position: center;">
-            <div class="card-body text-center p-4">
-            </div>
-            <!-- Title and Text (Centered) -->
-            <div class="overlay">
-              <h5 class="overlay-title text-center ">All kinds of Doors</h5>
-              <p class="overlay-text text-center">Doors offer diverse styles and functions to suit any need.</p>
+          <!-- Box 3 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/pvc.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4">
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">Pvc panal&Rafters</h5>
+                <p class="overlay-text text-center">These are lightweight, weather-resistant, and low-maintenance.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Box 8 -->
-        <div class="col">
-          <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/alu-partitions.webp'); background-size: cover; background-position: center;">
-            <div class="card-body p-4">
+          <!-- Box 4 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/stair1.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4">
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">Quality Steel railing </h5>
+                <p class="overlay-text text-center">A perfect blend of strength,durability, adding a stylish touch to any space.</p>
+              </div>
             </div>
-            <!-- Title and Text (Centered) -->
-            <div class="overlay">
-              <h5 class="overlay-title  text-center ">Aluminum Partations</h5>
-              <p class="overlay-text text-center">A sleek, durable, and flexible solution for space management.</p>
+          </div>
+          <!-- Box 5 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/blend1.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4">
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">Blinds & Mosquito doors</h5>
+                <p class="overlay-text text-center">These doors provide privacy and protection from insects.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 6 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/ele.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4">
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">Elevation Glass</h5>
+                <p class="overlay-text text-center">Enhances building aesthetics with sleek, modern design and natural light.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 7 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/door1.jpeg'); background-size: cover; background-position: center;">
+              <div class="card-body text-center p-4">
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title text-center ">All kinds of Doors</h5>
+                <p class="overlay-text text-center">Doors offer diverse styles and functions to suit any need.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 8 -->
+          <div class="col">
+            <div class="card d-flex flex-column align-items-center justify-content-center py-lg-5" style="background-image: url('assets/alu-partitions.webp'); background-size: cover; background-position: center;">
+              <div class="card-body p-4">
+              </div>
+              <!-- Title and Text (Centered) -->
+              <div class="overlay">
+                <h5 class="overlay-title  text-center ">Aluminum Partations</h5>
+                <p class="overlay-text text-center">A sleek, durable, and flexible solution for space management.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -359,45 +375,47 @@
     </div>
   </section>
   <!-------------Section-3---------------->
-  <div class=" container section-3 "> <!-- Added 'mt-5' for top margin -->
-    <!-- Text Content -->
-    <div class="text-content ">
-      <div class="row">
-        <div class="col-12 col-4 ">
-          <h2 class="text-heading text-start fw-bold "><span>D</span>esign for you</h2>
-        </div>
-        <div class="col-12 col-8">
-          <p class="text-description ">
-            We’ve designed and curated pieces that are a cut above your average home goods, because when you level up
-            your everyday objects, you elevate your daily rituals. Let the magic happen.
-          </p>
-        </div>
-      </div>
-    </div>
+  <div class=" custom-container section-3 "> <!-- Added 'mt-5' for top margin -->
+    <div class="container-fluid">
 
-    <!-- Image Grid Rows -->
-    <!-- <div class="row mb-3">
-      <div class="col-12 col-lg-5 mb-3 mb-lg-0">
-        <img src="assets/pic7.webp" alt="Image 1">
+      <!-- Text Content -->
+      <div class="text-content ">
+        <div class="row">
+          <div class="col-12 col-4 ">
+            <h2 class="text-heading text-start fw-bold "><span>D</span>esign for you</h2>
+          </div>
+          <div class="col-12 col-8">
+            <p class="text-description ">
+              We’ve designed and curated pieces that are a cut above your average home goods, because when you level up
+              your everyday objects, you elevate your daily rituals. Let the magic happen.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-lg-7 pt-4 pt-lg-0">
-        <img src="assets/pic9.webp" alt="Image 2">
+      <!-- Image Grid Rows -->
+      <!-- <div class="row mb-3">
+        <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+          <img src="assets/pic7.webp" alt="Image 1">
+        </div>
+        <div class="col-12 col-lg-7 pt-4 pt-lg-0">
+          <img src="assets/pic9.webp" alt="Image 2">
+        </div>
+      </div> -->
+      <div class="row mb-3">
+        <div class="col-12 col-md-5 mb-3 mb-md-0">
+          <img src="assets/s1.jpg" alt="Image 1">
+        </div>
+        <div class="col-12 col-md-7 ">
+          <img src="assets/s3.jpg" alt="Image 2">
+        </div>
       </div>
-    </div> -->
-    <div class="row mb-3">
-      <div class="col-12 col-md-5 mb-3 mb-md-0">
-        <img src="assets/s1.jpg" alt="Image 1">
-      </div>
-      <div class="col-12 col-md-7 ">
-        <img src="assets/s3.jpg" alt="Image 2">
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-12 col-md-6 mb-3 mb-md-0">
-        <img src="assets/s5.jpeg" alt="Image 3">
-      </div>
-      <div class="col-12 col-md-6">
-        <img src="assets/partiton.webp" alt="Image 4">
+      <div class="row mb-5">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <img src="assets/s5.jpeg" alt="Image 3">
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="assets/partiton.webp" alt="Image 4">
+        </div>
       </div>
     </div>
   </div>
@@ -405,162 +423,165 @@
   <!-- ----------Projects-section-4 -------->
   <!-- ----------Projects-section-4 -------->
   <section id="projects" class="projects-section mb-5" style="padding:3em 0;">
-    <div class="container">
-      <!-- Section Title -->
-      <div class="row">
-        <div class="col-12">
-          <h6 class="text-start fw-bold mb-5">Our Projects</h6>
-          <h2 class="text-start fw-bold services-title">
-            <span>T</span>ransforming Residential <span>and</span> Commercial<br>
-            Spaces with Innovative Design
-          </h2>
-        </div>
-      </div>
+    <div class="custom-container">
+      <div class="container-fluid">
 
-      <!-- Carousel for Large Devices -->
-      <div id="servicesCarousel" class="carousel slide mt-5 d-none d-md-block" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Carousel Item 1 -->
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p1.jpeg" class="card-img-top" alt="Lighting Solutions">
-                  <div class="card-body">
-                    <h5 class="card-title">Lighting Solutions</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p2.jpeg" class="card-img-top" alt="Space Planning">
-                  <div class="card-body">
-                    <h5 class="card-title">Space Planning</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p3.jpeg" class="card-img-top" alt="Material Selection">
-                  <div class="card-body">
-                    <h5 class="card-title">Material Selection</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Item 2 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/pro2.webp" class="card-img-top" alt="Design Project Development">
-                  <div class="card-body">
-                    <h5 class="card-title">Design Project Development</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p4.jpeg" class="card-img-top" alt="Furniture and Decor Selection">
-                  <div class="card-body">
-                    <h5 class="card-title">Furniture and Decor Selection</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p5.jpeg" class="card-img-top" alt="Selection of Colors and Materials">
-                  <div class="card-body">
-                    <h5 class="card-title">Selection of Colors and Materials</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Item 3 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p1.jpeg" class="card-img-top" alt="Lighting Solutions">
-                  <div class="card-body">
-                    <h5 class="card-title">Lighting Solutions</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p2.jpeg" class="card-img-top" alt="Space Planning">
-                  <div class="card-body">
-                    <h5 class="card-title">Space Planning</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="assets/p3.jpeg" class="card-img-top" alt="Material Selection">
-                  <div class="card-body">
-                    <h5 class="card-title">Material Selection</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators mt-4">
-          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
-        </div>
-      </div>
-
-      <!-- Stacked Cards for Small Devices -->
-      <div class="d-md-none mt-5">
+        <!-- Section Title -->
         <div class="row">
-          <div class="col-12 mb-4">
-            <div class="card shadow-sm">
-              <img src="assets/pro2.webp" class="card-img-top" alt="Design Project Development">
-              <div class="card-body">
-                <h5 class="card-title">Geometric pattern of blue panels, accented by gold metallic lines</h5>
+          <div class="col-12">
+            <h6 class="text-start fw-bold mb-5">Our Projects</h6>
+            <h2 class="text-start fw-bold services-title">
+              <span>T</span>ransforming Residential <span>and</span> Commercial<br>
+              Spaces with Innovative Design
+            </h2>
+          </div>
+        </div>
+
+        <!-- Carousel for Large Devices -->
+        <div id="servicesCarousel" class="carousel slide mt-5 d-none d-md-block" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p1.jpeg" class="card-img-top" alt="Lighting Solutions">
+                    <div class="card-body">
+                      <h5 class="card-title">Lighting Solutions</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p2.jpeg" class="card-img-top" alt="Space Planning">
+                    <div class="card-body">
+                      <h5 class="card-title">Space Planning</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p3.jpeg" class="card-img-top" alt="Material Selection">
+                    <div class="card-body">
+                      <h5 class="card-title">Material Selection</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/pro2.webp" class="card-img-top" alt="Design Project Development">
+                    <div class="card-body">
+                      <h5 class="card-title">Design Project Development</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p4.jpeg" class="card-img-top" alt="Furniture and Decor Selection">
+                    <div class="card-body">
+                      <h5 class="card-title">Furniture and Decor Selection</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p5.jpeg" class="card-img-top" alt="Selection of Colors and Materials">
+                    <div class="card-body">
+                      <h5 class="card-title">Selection of Colors and Materials</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p1.jpeg" class="card-img-top" alt="Lighting Solutions">
+                    <div class="card-body">
+                      <h5 class="card-title">Lighting Solutions</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p2.jpeg" class="card-img-top" alt="Space Planning">
+                    <div class="card-body">
+                      <h5 class="card-title">Space Planning</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img src="assets/p3.jpeg" class="card-img-top" alt="Material Selection">
+                    <div class="card-body">
+                      <h5 class="card-title">Material Selection</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 mb-4">
-            <div class="card shadow-sm">
-              <img src="assets/pro3.webp" class="card-img-top" alt="Furniture and Decor Selection">
-              <div class="card-body">
-                <h5 class="card-title">Steel railing with wooden steps</h5>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators mt-4">
+            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+
+        <!-- Stacked Cards for Small Devices -->
+        <div class="d-md-none mt-5">
+          <div class="row">
+            <div class="col-12 mb-4">
+              <div class="card shadow-sm">
+                <img src="assets/pro2.webp" class="card-img-top" alt="Design Project Development">
+                <div class="card-body">
+                  <h5 class="card-title">Geometric pattern of blue panels, accented by gold metallic lines</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 mb-4">
-            <div class="card shadow-sm">
-              <img src="assets/pro4.webp" class="card-img-top" alt="Selection of Colors and Materials">
-              <div class="card-body">
-                <h5 class="card-title">Balcony with frosted glass panels as the railing</h5>
+            <div class="col-12 mb-4">
+              <div class="card shadow-sm">
+                <img src="assets/pro3.webp" class="card-img-top" alt="Furniture and Decor Selection">
+                <div class="card-body">
+                  <h5 class="card-title">Steel railing with wooden steps</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 mb-4">
-            <div class="card shadow-sm">
-              <img src="assets/pro5.webp" class="card-img-top" alt="Lighting Solutions">
-              <div class="card-body">
-                <h5 class="card-title">Aluminum partitions</h5>
+            <div class="col-12 mb-4">
+              <div class="card shadow-sm">
+                <img src="assets/pro4.webp" class="card-img-top" alt="Selection of Colors and Materials">
+                <div class="card-body">
+                  <h5 class="card-title">Balcony with frosted glass panels as the railing</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="card shadow-sm">
+                <img src="assets/pro5.webp" class="card-img-top" alt="Lighting Solutions">
+                <div class="card-body">
+                  <h5 class="card-title">Aluminum partitions</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -569,49 +590,51 @@
     </div>
   </section>
   <!-------------Contact Section-5 --------->
-  <section id="contact" class="contact-section container mt-5 mb-5" style="margin-top: 10rem;">
-    <div class="row">
-      <!-- Section Title and Contact Info -->
-      <div class="col-6 mb-4">
-        <h6 class="text-start fw-bold mb-5">Contact </h6>
-        <h2 class="text-start contact-title mt-2 mb-4">
-          <span>G</span>et to know us personally
-        </h2>
-        <h5 class="mb-3">Address for an Interior<br> design studio</h5>
-        <p>
-          <strong>Address:</strong> Sai Baba puntha road, opposite HP Petrol Bunk, Morampudi, Rajamahendravaram, Andhra Pradesh 533107
-        </p>
-        <p>
-          <strong>Phone:</strong>
-          <a href="tel:+91 9014345167" style="color: rgb(31, 30, 30); text-decoration: none;"> +91 9014345167</a>
-        </p>
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info.decorsin@gmail.com" style="color: rgb(31, 30, 30); text-decoration: none;">info.decorsin@gmail.com</a>
-        </p>
+  <section id="contact" class="contact-section custom-container mt-5 mb-5" style="margin-top: 10rem;">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Section Title and Contact Info -->
+        <div class="col-6 mb-4">
+          <h6 class="text-start fw-bold mb-5">Contact </h6>
+          <h2 class="text-start contact-title mt-2 mb-4">
+            <span>G</span>et to know us personally
+          </h2>
+          <h5 class="mb-3">Address for an Interior<br> design studio</h5>
+          <p>
+            <strong>Address:</strong> Sai Baba puntha road, opposite HP Petrol Bunk, Morampudi, Rajamahendravaram, Andhra Pradesh 533107
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+91 9014345167" style="color: rgb(31, 30, 30); text-decoration: none;"> +91 9014345167</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info.decorsin@gmail.com" style="color: rgb(31, 30, 30); text-decoration: none;">info.decorsin@gmail.com</a>
+          </p>
 
-        <!-- Social Media Icons -->
-        <div class="social-media-icons mt-4 mb-4">
-          <a href="https://instagram.com" class="fs-5" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://x.com" class="fs-5" target="_blank">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://facebook.com" class="fs-5" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
+          <!-- Social Media Icons -->
+          <div class="social-media-icons mt-4 mb-4">
+            <a href="https://instagram.com" class="fs-5" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com" class="fs-5" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://facebook.com" class="fs-5" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Map Section -->
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="w-100" style="height:70%;">
-          <div class="ratio ratio-16x9" style="height: 100%;">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15262.08757262579!2d81.8152412!3d16.998052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x691b9a99387a745%3A0xc114f3a8efe90abf!2sDecorsIn!5e0!3m2!1sen!2sin!4v1726578991565!5m2!1sen!2sin"
-              style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Map Section -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="w-100" style="height:70%;">
+            <div class="ratio ratio-16x9" style="height: 100%;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15262.08757262579!2d81.8152412!3d16.998052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x691b9a99387a745%3A0xc114f3a8efe90abf!2sDecorsIn!5e0!3m2!1sen!2sin!4v1726578991565!5m2!1sen!2sin"
+                style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -624,6 +647,5 @@
   </footer>
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
